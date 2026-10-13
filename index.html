@@ -2231,8 +2231,8 @@ body { background: var(--bg); }
           <tr><td class="m">2</td><td>보안</td></tr>
           <tr><td class="m">3</td><td>실습 ① Claude 확장프로그램으로 조사하기</td></tr>
           <tr><td class="blank">–</td><td>휴식</td></tr>
-          <tr><td class="m">4</td><td>실습 ③ 엑셀을 대시보드로</td></tr>
-          <tr><td class="m">5</td><td>실습 ④ 배포 · 공유</td></tr>
+          <tr><td class="m">4</td><td>실습 ② 엑셀을 대시보드로</td></tr>
+          <tr><td class="m">5</td><td>실습 ③ 배포 · 공유</td></tr>
           <tr><td class="m">6</td><td>1회차로 할 수 있는 것 · 정리</td></tr>
           <tr><td class="blank">부록</td><td>Aside · SharePoint 자동화 (시간이 남으면)</td></tr>
         </tbody>
@@ -2243,7 +2243,7 @@ body { background: var(--bg); }
   <section class="slide">
     <div class="slide-head"><h2>오늘 만들 결과를 먼저 봅니다</h2><span class="head-tag">소개</span></div>
     <div class="slide-body">
-      <div class="shot" style="text-align:center"><img style="max-height:400px; width:auto; max-width:100%; display:inline-block" src="images/c8-board-prices.png" alt="Next.js로 만든 제품 가격표 대시보드: 맨 위 한눈에 요약 띠(제품 수 · 평균가 · 최저가 · 최고가 · 지난번과 비교 · 확인할 알림), 검사 줄, 가격표 · 이전과 비교 · 전체 목록 · 동기화 기록 · 알림 탭"></div>
+      <div class="shot" style="text-align:center"><img style="max-height:400px; width:auto; max-width:100%; display:inline-block" src="images/c8-board-prices.png" alt="Next.js로 만든 제품 가격표 대시보드: 맨 위 한눈에 요약 띠(제품 수 · 평균가 · 최저가 · 최고가 · 지난번과 비교 · 확인할 알림), 상태 줄, 가격표 · 이전과 비교 · 전체 목록 · 동기화 기록 · 알림 탭"></div>
       <div class="note" style="margin-top:14px">정해진 시간마다 Claude Code 루틴이 Claude 확장프로그램으로 조사해 작업 폴더의 엑셀을 고치고, 대시보드까지 갱신합니다(PC·Chrome이 켜져 있을 때). 사람은 맨 위 <b>한눈에 요약</b>과 ‘알림’ 탭부터 보고 결과만 확인합니다</div>
     </div>
   </section>
@@ -2265,103 +2265,145 @@ body { background: var(--bg); }
       <p class="ch-eyebrow">CHAPTER 1</p>
       <h2 class="ch-title">AI 이론</h2>
       <div class="ch-rule"></div>
-      <ul class="ch-keys"><li>1 AI가 대답하는 원리</li><li>2 LLM과 에이전트</li><li>3 에이전트의 원리</li><li>4 CLI · MCP · 스킬</li></ul>
+      <ul class="ch-keys"><li>AI가 대답하는 원리</li><li>LLM과 에이전트</li><li>에이전트가 일하는 방식</li><li>CLI · MCP · 스킬</li></ul>
     </div>
   </section>
 
   <section class="slide ref-wrap" data-steps="1" data-stage="0" data-arrow-steps>
     <h2 style="display:none">AI 이론 · 빈칸 맞히기</h2>
-    <iframe src="ref-theory.html#2" title="AI 이론 · 빈칸 맞히기" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#2" title="AI 이론 · 빈칸 맞히기" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · 다음에 올 말을 확률로 고릅니다</h2>
-    <iframe src="ref-theory.html#3" title="AI 이론 · 다음에 올 말을 확률로 고릅니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#3" title="AI 이론 · 다음에 올 말을 확률로 고릅니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · AI는 글을 "토큰"이라는 조각으로 셉니다</h2>
-    <iframe src="ref-theory.html#4" title="AI 이론 · AI는 글을 "토큰"이라는 조각으로 셉니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#4" title="AI 이론 · AI는 글을 "토큰"이라는 조각으로 셉니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+  </section>
+
+  <section class="slide slide--chapter">
+    <div class="chapter">
+      <p class="ch-eyebrow">AI 이론</p>
+      <h2 class="ch-title">LLM과 에이전트는<br>무엇이 다를까</h2>
+      <div class="ch-rule"></div>
+    </div>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · LLM은 글자를 이어 쓰는 기계입니다</h2>
-    <iframe src="ref-theory.html#5" title="AI 이론 · LLM은 글자를 이어 쓰는 기계입니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · LLM과 에이전트는 무엇이 다를까</h2>
-    <iframe src="ref-theory.html#6" title="AI 이론 · LLM과 에이전트는 무엇이 다를까" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#5" title="AI 이론 · LLM은 글자를 이어 쓰는 기계입니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · "이 폴더 엑셀 파일 12개를 하나로 합쳐 줘"</h2>
-    <iframe src="ref-theory.html#7" title="AI 이론 · "이 폴더 엑셀 파일 12개를 하나로 합쳐 줘"" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#7" title="AI 이론 · "이 폴더 엑셀 파일 12개를 하나로 합쳐 줘"" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · 에이전트의 공식</h2>
-    <iframe src="ref-theory.html#8" title="AI 이론 · 에이전트의 공식" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · 글자만 내보내는 AI가 어떻게 파일을 다룰까</h2>
-    <iframe src="ref-theory.html#9" title="AI 이론 · 글자만 내보내는 AI가 어떻게 파일을 다룰까" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · 단순히 텍스트만 뱉는 LLM이 어떻게 파일을 읽고, 쓰고, 실행할 수 있을까?</h2>
-    <iframe src="ref-theory.html#10" title="AI 이론 · 단순히 텍스트만 뱉는 LLM이 어떻게 파일을 읽고, 쓰고, 실행할 수 있을까?" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#8" title="AI 이론 · 에이전트의 공식" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · 두뇌(LLM)는 판단하고, Claude Code가 실행합니다</h2>
-    <iframe src="ref-theory.html#11" title="AI 이론 · 두뇌(LLM)는 판단하고, Claude Code가 실행합니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#11" title="AI 이론 · 두뇌(LLM)는 판단하고, Claude Code가 실행합니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · AI는 이미 똑똑합니다. 그런데 일을 바로 맡기면 못 합니다</h2>
-    <iframe src="ref-theory.html#12" title="AI 이론 · AI는 이미 똑똑합니다. 그런데 일을 바로 맡기면 못 합니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · 손이 닿는 범위 넓히기 CLI, MCP, 스킬</h2>
-    <iframe src="ref-theory.html#13" title="AI 이론 · 손이 닿는 범위 넓히기 CLI, MCP, 스킬" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#12" title="AI 이론 · AI는 이미 똑똑합니다. 그런데 일을 바로 맡기면 못 합니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · 에이전트는 연결된 만큼 일합니다</h2>
-    <iframe src="ref-theory.html#14" title="AI 이론 · 에이전트는 연결된 만큼 일합니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#14" title="AI 이론 · 에이전트는 연결된 만큼 일합니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · 프로그램에 원래 달린 글로 조작하는 버튼</h2>
-    <iframe src="ref-theory.html#15" title="AI 이론 · 프로그램에 원래 달린 글로 조작하는 버튼" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+  <section class="slide">
+    <div class="slide-head"><h2>프로그램에 원래 달린, 글로 조작하는 버튼: CLI</h2><span class="head-tag">AI 이론 · CLI</span></div>
+    <div class="slide-body">
+      <div class="split" style="align-items:center; gap:34px">
+        <div class="split-main" style="flex:0 0 560px">
+          <img src="images/cli-text-buttons.jpg" alt="AI가 CLI를 통해 Gmail과 Notion을 글로 조작하는 그림" style="display:block; width:100%; border-radius:16px">
+        </div>
+        <div class="split-side" style="flex:1 1 auto">
+          <div class="note">사람은 화면을 클릭하지만, AI는 <b>글로 지시하는 방식</b>이 훨씬 빠르고 정확합니다</div>
+          <div class="note" style="margin-top:12px">AI에게 CLI를 주면 메일 · 드라이브 · 파일 같은 도구로 <b>사람 대신 직접 일을 처리</b>합니다</div>
+          <div class="pbox pbox--tight" data-app="명령 프롬프트 · 강사 시연" style="margin-top:30px"><p style="font-size:18px">curl "https://wttr.in/Seoul?format=3"</p></div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · AI 전용으로 새로 만든 연결 어댑터</h2>
-    <iframe src="ref-theory.html#16" title="AI 이론 · AI 전용으로 새로 만든 연결 어댑터" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#16" title="AI 이론 · AI 전용으로 새로 만든 연결 어댑터" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · Claude 앱에서 Gmail · 구글 캘린더를 연결하는 방법</h2>
-    <iframe src="ref-theory.html#17" title="AI 이론 · Claude 앱에서 Gmail · 구글 캘린더를 연결하는 방법" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · 스킬이란</h2>
-    <iframe src="ref-theory.html#18" title="AI 이론 · 스킬이란" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">AI 이론 · 스킬 = AI가 필요할 때 꺼내 읽는 업무 매뉴얼</h2>
-    <iframe src="ref-theory.html#19" title="AI 이론 · 스킬 = AI가 필요할 때 꺼내 읽는 업무 매뉴얼" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+  <section class="slide">
+    <div class="slide-head"><h2>스킬 = AI가 필요할 때 꺼내 읽는 업무 매뉴얼</h2><span class="head-tag">AI 이론 · 스킬</span></div>
+    <div class="slide-body">
+      <svg viewBox="0 0 1136 420" style="display:block; width:100%; height:auto; font-family:inherit" role="img" aria-label="스킬 없을 때 신입 사원은 보고서 양식을 몰라 헤매고, 보고서 작성법 매뉴얼(SKILL.md)을 받으면 같은 양식으로 바로 완성하는 비교 그림">
+<defs><marker id="ar-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#D93025"/></marker><marker id="ar-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E8B57"/></marker></defs>
+<rect x="0" y="0" width="556" height="340" rx="20" fill="#FDECEA"/>
+<rect x="158" y="16" width="240" height="46" rx="23" fill="#D93025"/><text x="278" y="48" font-size="24" font-weight="900" fill="#fff" text-anchor="middle">스킬 없을 때</text>
+<text x="40" y="92" font-size="13" font-weight="700" fill="#687284">팀장</text><path d="M106,138 l-6,20 l22,-8 z" fill="#fff" stroke="#9AA3B2" stroke-width="2" stroke-linejoin="round"/><rect x="36" y="98" width="250" height="44" rx="22" fill="#fff" stroke="#9AA3B2" stroke-width="2"/><text x="161" y="127" font-size="18" font-weight="800" fill="#002857" text-anchor="middle">이번 주 보고서 써 줘!</text>
+<path d="M102,298 q0,-34 34,-34 h28 q34,0 34,34 v24 h-96 z" fill="#2B4C7E"/>
+<path d="M150,250 l14,0 l-14,30 l-14,-30 z" fill="#fff"/>
+<path d="M150,252 l5,8 l-5,22 l-5,-22 z" fill="#2E8B57"/>
+<rect x="160" y="284" width="34" height="18" rx="4" fill="#fff"/><text x="177" y="297" font-size="11" font-weight="800" fill="#002857" text-anchor="middle">신입</text>
+<circle cx="150" cy="212" r="36" fill="#F7D6B8"/>
+<path d="M113,210 Q114,166 150,168 Q188,166 187,210 Q172,188 150,190 Q126,188 113,210 Z" fill="#33302E"/>
+<circle cx="137" cy="214" r="4" fill="#33302E"/><circle cx="163" cy="214" r="4" fill="#33302E"/>
+<path d="M140,232 q5,-5 10,0 t10,0" stroke="#33302E" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M190,192 q-7,10 0,14 q7,-4 0,-14 z" fill="#6FB6F0"/>
+<text x="78" y="190" font-size="34" font-weight="900" fill="#D93025">?</text><text x="98" y="166" font-size="24" font-weight="900" fill="#D93025">?</text>
+<path d="M222,240 C262,240 284,218 318,208" stroke="#D93025" stroke-width="3" fill="none" stroke-dasharray="7 6" marker-end="url(#ar-r)"/>
+<g transform="rotate(-5 410 180)"><rect x="330" y="92" width="160" height="176" rx="10" fill="#fff" stroke="#E2B4AE" stroke-width="2"/><path d="M350,124 q20,-8 40,0 t40,0 t30,0 M350,154 q15,8 30,0 t30,0 t40,0 M350,184 q25,-8 50,0 t40,0 M350,214 q18,8 36,0 t34,0" stroke="#B9C0CC" stroke-width="3" fill="none"/><text x="452" y="254" font-size="40" font-weight="900" fill="#D93025" text-anchor="middle">?</text></g>
+<rect x="300" y="286" width="230" height="40" rx="20" fill="#F8D4CF"/><text x="415" y="312" font-size="17" font-weight="800" fill="#D93025" text-anchor="middle">매번 처음부터 설명</text>
+<rect x="580" y="0" width="556" height="340" rx="20" fill="#E6F4EE"/>
+<rect x="738" y="16" width="240" height="46" rx="23" fill="#2E8B57"/><text x="858" y="48" font-size="24" font-weight="900" fill="#fff" text-anchor="middle">스킬 있을 때</text>
+<rect x="604" y="96" width="176" height="160" rx="12" fill="#fff" stroke="#002857" stroke-width="2.5"/>
+<path d="M616,96 h152 a12,12 0 0 1 12,12 v26 h-176 v-26 a12,12 0 0 1 12,-12 z" fill="#002857"/>
+<text x="692" y="121" font-size="16" font-weight="900" fill="#fff" text-anchor="middle">보고서 작성법</text>
+<text x="622" y="162" font-size="15" font-weight="700" fill="#002857">① 실적 요약</text>
+<text x="622" y="188" font-size="15" font-weight="700" fill="#002857">② 이슈 · 원인</text>
+<text x="622" y="214" font-size="15" font-weight="700" fill="#002857">③ 다음 주 계획</text>
+<rect x="624" y="230" width="84" height="18" rx="9" fill="#E8EEF6"/><text x="666" y="243" font-size="11" font-weight="800" fill="#002857" text-anchor="middle">SKILL.md</text>
+<path d="M786,170 L812,170" stroke="#2E8B57" stroke-width="3" marker-end="url(#ar-g)"/>
+<path d="M832,254 q0,-34 34,-34 h28 q34,0 34,34 v24 h-96 z" fill="#2B4C7E"/>
+<path d="M880,206 l14,0 l-14,30 l-14,-30 z" fill="#fff"/>
+<path d="M880,208 l5,8 l-5,22 l-5,-22 z" fill="#2E8B57"/>
+<rect x="890" y="240" width="34" height="18" rx="4" fill="#fff"/><text x="907" y="253" font-size="11" font-weight="800" fill="#002857" text-anchor="middle">신입</text>
+<circle cx="880" cy="168" r="36" fill="#F7D6B8"/>
+<path d="M843,166 Q844,122 880,124 Q918,122 917,166 Q902,144 880,146 Q856,144 843,166 Z" fill="#33302E"/>
+<path d="M861,172 q6,-7 12,0 M887,172 q6,-7 12,0" stroke="#33302E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M869,183 Q880,195 891,183" stroke="#33302E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<circle cx="857" cy="182" r="6" fill="#F4A6A0" opacity=".7"/><circle cx="903" cy="182" r="6" fill="#F4A6A0" opacity=".7"/>
+<path d="M822,125 v-9 M822,131 v9 M819,128 h-9 M825,128 h9" stroke="#F2B705" stroke-width="3" stroke-linecap="round"/>
+<path d="M934,119 v-9 M934,125 v9 M931,122 h-9 M937,122 h9" stroke="#F2B705" stroke-width="3" stroke-linecap="round"/>
+<path d="M936,170 L964,170" stroke="#2E8B57" stroke-width="3" marker-end="url(#ar-g)"/>
+<rect x="972" y="92" width="140" height="176" rx="10" fill="#fff" stroke="#BFDDB4" stroke-width="2"/>
+<rect x="988" y="108" width="108" height="12" rx="4" fill="#002857"/>
+<rect x="988" y="134" width="96" height="8" rx="4" fill="#C9D6E8"/>
+<rect x="988" y="150" width="80" height="8" rx="4" fill="#C9D6E8"/>
+<rect x="988" y="174" width="96" height="8" rx="4" fill="#C9D6E8"/>
+<rect x="988" y="190" width="70" height="8" rx="4" fill="#C9D6E8"/>
+<rect x="988" y="214" width="90" height="8" rx="4" fill="#C9D6E8"/>
+<circle cx="1086" cy="248" r="16" fill="#2E8B57"/><path d="M1078,248 l6,6 l11,-12" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="600" y="286" width="516" height="40" rx="20" fill="#CDE9DA"/><text x="858" y="312" font-size="17" font-weight="800" fill="#2E8B57" text-anchor="middle">매뉴얼대로 · 매번 같은 양식으로 완성</text>
+<rect x="0" y="356" width="1136" height="60" rx="16" fill="#E8EEF6"/><text x="568" y="396" font-size="28" font-weight="900" fill="#002857" text-anchor="middle">스킬은 AI가 필요할 때 꺼내 읽는 <tspan fill="#2E8B57">업무 매뉴얼</tspan></text>
+</svg>
+      <p class="shot-cap" style="margin-top:12px">신입 사원 = AI · 보고서 작성법 = 스킬(SKILL.md) · AI를 다시 가르치는 게 아니라, 그 일이 들어올 때만 매뉴얼을 펼칩니다</p>
+    </div>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">AI 이론 · 도구는 "할 수 있는 일", 스킬은 "잘하는 방법"</h2>
-    <iframe src="ref-theory.html#20" title="AI 이론 · 도구는 "할 수 있는 일", 스킬은 "잘하는 방법"" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#20" title="AI 이론 · 도구는 "할 수 있는 일", 스킬은 "잘하는 방법"" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide slide--chapter" data-chapter="보안">
@@ -2369,7 +2411,7 @@ body { background: var(--bg); }
       <p class="ch-eyebrow">CHAPTER 2</p>
       <h2 class="ch-title">보안</h2>
       <div class="ch-rule"></div>
-      <ul class="ch-keys"><li>최근 사례 · 인증과 인가</li><li>프롬프트 인젝션 시연</li><li>메일 · 이미지 · 실제 사례</li><li>내 로그인 = 내 권한</li><li>넣지 않을 것 · 공개 페이지만</li><li>정리</li></ul>
+      <ul class="ch-keys"><li>최근 사례 · 허술한 관계자 문</li><li>프롬프트 인젝션</li><li>메일 · 이미지 · 실제 사례</li><li>내 로그인 = 내 권한</li><li>넣지 않을 것 · 공개 페이지만</li></ul>
     </div>
   </section>
 
@@ -2384,161 +2426,86 @@ body { background: var(--bg); }
       <ol class="steps" style="margin-top:28px; font-size:23px">
         <li><b>대출 모집인용 조회 화면</b>으로 들어왔습니다 <span style="color:var(--ink-soft); font-size:18px">(인증 우회 · 은행 발표)</span></li>
         <li>거기서 얻은 <b>고객번호로 다른 서비스</b>까지 조회했습니다 <span style="color:var(--ink-soft); font-size:18px">(은행 발표)</span></li>
-        <li>원인은 <b>‘볼 권한 확인(인가)’의 허점</b>으로 분석됩니다 <span style="color:var(--ink-soft); font-size:18px">(보안업체 분석 · 조사 중)</span></li>
+        <li><b>털린 비밀번호 대입 · AI 자동화</b> 가능성이 제기됩니다 <span style="color:var(--ink-soft); font-size:18px">(보안업계 · 조사 중)</span></li>
       </ol>
-      <p class="sub" style="margin-top:22px; font-size:16px">같은 시기 KB국민 · 하나 · 부산은행도 유출을 발표했습니다 · 출처: <a style="color:var(--navy)" href="https://v.daum.net/v/20261001123012747">국민일보 2026-10-01(다음 뉴스)</a> · <a style="color:var(--navy)" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6855469_37004.html">MBC 뉴스데스크 2026-10-02</a> · <a style="color:var(--navy)" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6855468_37004.html">MBC(국민·하나 유출) 2026-10-02</a> · <a style="color:var(--navy)" href="https://www.segye.com/newsView/20261002506727">세계일보 2026-10-02</a> · <a style="color:var(--navy)" href="https://www.boannews.com/news/articleView.html?idxno=146174">보안뉴스 2026-10-02</a> · <a style="color:var(--navy)" href="https://fnnews.com/news/202610081452408589">파이낸셜뉴스 2026-10-08</a></p>
+      <p class="sub" style="margin-top:22px; font-size:16px">같은 시기 KB국민 · 하나 · 부산은행도 유출을 발표했습니다 · 출처: <a style="color:var(--navy)" href="https://www.yna.co.kr/view/AKR20261001145452002">연합뉴스 2026-10-01</a> · <a style="color:var(--navy)" href="https://www.donga.com/news/It/article/all/20261002/134774423/1">동아일보 2026-10-02</a> · <a style="color:var(--navy)" href="https://v.daum.net/v/20261001123012747">국민일보 2026-10-01(다음 뉴스)</a> · <a style="color:var(--navy)" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6855469_37004.html">MBC 뉴스데스크 2026-10-02</a> · <a style="color:var(--navy)" href="https://imnews.imbc.com/replay/2026/nwdesk/article/6855468_37004.html">MBC(국민·하나 유출) 2026-10-02</a> · <a style="color:var(--navy)" href="https://www.segye.com/newsView/20261002506727">세계일보 2026-10-02</a> · <a style="color:var(--navy)" href="https://www.boannews.com/news/articleView.html?idxno=146174">보안뉴스 2026-10-02</a> · <a style="color:var(--navy)" href="https://fnnews.com/news/202610081452408589">파이낸셜뉴스 2026-10-08</a></p>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>정문으로 오든 담을 넘든, 들어오면 같은 곳에 닿습니다</h2><span class="head-tag">보안 · 비유</span></div>
+    <div class="slide-head"><h2>손님 문을 지켜도, 관계자 문이 허술하면 같은 곳에 닿습니다</h2><span class="head-tag">보안 · 비유</span></div>
     <div class="slide-body">
-      <!-- 정문(로그인)과 담 넘기(인증 우회) → 같은 조회 서비스 → 고객번호로 다른 서비스까지 -->
+      <!-- 손님용 문(고객용 앱)과 허술한 관계자용 문(모집인 조회 서비스) → 같은 고객 정보 → 고객번호로 다른 서비스까지 -->
       <svg viewBox="0 0 1150 372" style="display:block; width:100%; height:auto; flex-shrink:0; font-family:inherit" role="img"
-           aria-label="담장 가운데 정문으로 로그인해 들어오는 사람과 사다리로 담을 넘는 사람이 있다. 두 사람 모두 같은 대출 모집인용 조회 서비스에 도착하고, 거기서 얻은 고객번호로 다른 서비스의 고객 정보까지 가져간다">
+           aria-label="은행 건물에 문이 두 개 있다. 손님용 문은 고객용 뱅킹 앱으로 아이디, 비밀번호, 2차 인증까지 확인하고, 관계자용 문은 대출 모집인 조회 서비스로 확인이 허술하다. 범인은 관계자용 문으로 들어가 같은 고객 정보에 닿고, 얻은 고객번호로 다른 서비스의 정보까지 가져간다">
         <defs>
-          <marker id="gw-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4F9A3B"/></marker>
-          <marker id="gw-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#D93025"/></marker>
-          <marker id="gw-n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#002857"/></marker>
-          <pattern id="gw-brick" width="40" height="20" patternUnits="userSpaceOnUse">
-            <rect width="40" height="20" fill="#D5DCE6"/>
-            <path d="M0,10 H40 M20,0 V10 M0,10 V20 M40,10 V20" stroke="#B4BFCE" stroke-width="1.5"/>
-          </pattern>
+          <marker id="td-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4F9A3B"/></marker>
+          <marker id="td-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#D93025"/></marker>
+          <marker id="td-n" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#002857"/></marker>
         </defs>
 
-        <!-- 안 / 바깥 -->
-        <rect x="0" y="0" width="820" height="186" rx="12" fill="#F4F6F9"/>
-        <text x="20" y="32" font-size="16" font-weight="700" fill="#687284">안</text>
-        <text x="20" y="362" font-size="16" font-weight="700" fill="#687284">바깥</text>
+        <!-- 은행 건물 -->
+        <path d="M150,62 L510,14 L870,62 Z" fill="#002857"/>
+        <rect x="160" y="62" width="700" height="238" fill="#F4F6F9" stroke="#002857" stroke-width="2.5"/>
+        <line x1="120" y1="300" x2="900" y2="300" stroke="#9AA3B2" stroke-width="3"/>
+        <text x="510" y="94" font-size="18" font-weight="800" fill="#002857" text-anchor="middle">은행의 고객 정보</text>
+        <rect x="370" y="108" width="84" height="36" rx="4" fill="#fff" stroke="#9AA3B2"/>
+        <rect x="468" y="108" width="84" height="36" rx="4" fill="#fff" stroke="#9AA3B2"/>
+        <rect x="566" y="108" width="84" height="36" rx="4" fill="#fff" stroke="#9AA3B2"/>
+        <text x="412" y="131" font-size="13" fill="#384152" text-anchor="middle">고객번호</text>
+        <text x="510" y="131" font-size="13" fill="#384152" text-anchor="middle">고객번호</text>
+        <text x="608" y="131" font-size="13" fill="#384152" text-anchor="middle">고객번호</text>
 
-        <!-- 담장과 정문 -->
-        <rect x="20" y="186" width="270" height="70" fill="url(#gw-brick)"/>
-        <rect x="430" y="186" width="370" height="70" fill="url(#gw-brick)"/>
-        <rect x="286" y="164" width="22" height="96" rx="3" fill="#002857"/>
-        <rect x="412" y="164" width="22" height="96" rx="3" fill="#002857"/>
-        <rect x="280" y="150" width="160" height="22" rx="4" fill="#002857"/>
-        <text x="360" y="166" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">정문 · 로그인</text>
-        <path d="M308,256 L338,236 L338,182 L308,172 Z" fill="#E8EEF6" stroke="#9AA3B2"/>
-        <path d="M412,256 L382,236 L382,182 L412,172 Z" fill="#E8EEF6" stroke="#9AA3B2"/>
+        <!-- 손님용 문 (튼튼한 양문) -->
+        <rect x="176" y="150" width="236" height="30" rx="15" fill="#4F9A3B"/>
+        <text x="294" y="171" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">손님용 문 · 고객용 뱅킹 앱</text>
+        <rect x="246" y="190" width="128" height="110" rx="4" fill="#002857"/>
+        <rect x="252" y="196" width="56" height="104" fill="#E8EEF6" stroke="#9AA3B2"/>
+        <rect x="312" y="196" width="56" height="104" fill="#E8EEF6" stroke="#9AA3B2"/>
+        <circle cx="302" cy="252" r="4" fill="#002857"/><circle cx="318" cy="252" r="4" fill="#002857"/>
+        <rect x="384" y="214" width="26" height="40" rx="4" fill="#fff" stroke="#4F9A3B" stroke-width="2"/>
+        <circle cx="391" cy="224" r="2.5" fill="#4F9A3B"/><circle cx="403" cy="224" r="2.5" fill="#4F9A3B"/>
+        <circle cx="391" cy="234" r="2.5" fill="#4F9A3B"/><circle cx="403" cy="234" r="2.5" fill="#4F9A3B"/>
+        <circle cx="391" cy="244" r="2.5" fill="#4F9A3B"/><circle cx="403" cy="244" r="2.5" fill="#4F9A3B"/>
 
-        <!-- ① 정문으로 들어오는 사람 -->
-        <g stroke="#4F9A3B" stroke-width="4" stroke-linecap="round" fill="none">
-          <circle cx="360" cy="286" r="12" fill="#4F9A3B" stroke="none"/>
-          <path d="M360,298 V326 M360,306 L346,318 M360,306 L374,318 M360,326 L350,346 M360,326 L370,346"/>
-        </g>
-        <rect x="374" y="292" width="20" height="13" rx="2" fill="#fff" stroke="#4F9A3B" stroke-width="2"/>
-        <line x1="360" y1="270" x2="360" y2="120" stroke="#4F9A3B" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#gw-g)"/>
-        <text x="190" y="300" font-size="16" font-weight="800" fill="#4F9A3B" text-anchor="end">① 정문으로</text>
-        <text x="190" y="322" font-size="14" fill="#687284" text-anchor="end">아이디 · 비밀번호로 확인</text>
+        <!-- 관계자용 문 (작고 허술한 문, 살짝 열림) -->
+        <rect x="560" y="178" width="250" height="30" rx="15" fill="#D93025"/>
+        <text x="685" y="199" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">관계자용 문 · 대출 모집인 조회</text>
+        <rect x="648" y="216" width="74" height="84" rx="3" fill="#6B7280"/>
+        <rect x="652" y="220" width="66" height="80" fill="#1F2430"/>
+        <path d="M718,220 L690,228 L690,296 L718,300 Z" fill="#D5DCE6" stroke="#9AA3B2"/>
+        <circle cx="696" cy="262" r="3" fill="#6B7280"/>
 
-        <!-- ② 담을 넘는 사람 -->
-        <g stroke="#7A5C3E" stroke-width="4" stroke-linecap="round">
-          <path d="M600,352 L640,176 M632,352 L672,176"/>
-          <path d="M607,322 H638 M614,292 H645 M621,262 H652 M628,232 H659 M635,202 H666"/>
-        </g>
-        <g stroke="#D93025" stroke-width="4" stroke-linecap="round" fill="none">
-          <circle cx="672" cy="146" r="12" fill="#D93025" stroke="none"/>
-          <path d="M672,158 L666,184 M670,166 L652,176 M670,166 L688,160 M666,184 L652,200 M666,184 L684,196"/>
-        </g>
-        <text x="690" y="300" font-size="16" font-weight="800" fill="#D93025">② 담을 넘어</text>
-        <text x="690" y="322" font-size="14" fill="#687284">인증 우회 (비정상 접근)</text>
-        <text x="690" y="342" font-size="14" fill="#687284">넘은 방법은 조사 중</text>
+        <!-- 두 문 모두 같은 고객 정보로 -->
+        <path d="M424,262 C440,220 432,176 414,150" stroke="#4F9A3B" stroke-width="3" fill="none" marker-end="url(#td-g)"/>
+        <path d="M685,214 C670,186 640,164 616,150" stroke="#D93025" stroke-width="3" stroke-dasharray="7 6" fill="none" marker-end="url(#td-r)"/>
+        <text x="510" y="262" font-size="15" font-weight="800" fill="#0F1726" text-anchor="middle">어느 문이든</text>
+        <text x="510" y="282" font-size="15" font-weight="800" fill="#0F1726" text-anchor="middle">같은 곳에 닿습니다</text>
 
-        <!-- 같은 도착지 -->
-        <path d="M360,112 C360,80 560,70 846,84" stroke="#4F9A3B" stroke-width="3" stroke-dasharray="7 6" fill="none" marker-end="url(#gw-g)"/>
-        <path d="M686,128 C700,96 770,90 846,100" stroke="#D93025" stroke-width="3" stroke-dasharray="7 6" fill="none" marker-end="url(#gw-r)"/>
-        <text x="520" y="58" font-size="18" font-weight="800" fill="#0F1726" text-anchor="middle">도착지는 같습니다</text>
-
-        <!-- 조회 서비스 건물 -->
-        <path d="M852,52 L986,10 L1120,52 Z" fill="#002857"/>
-        <rect x="860" y="52" width="252" height="128" rx="6" fill="#fff" stroke="#002857" stroke-width="2.5"/>
-        <text x="986" y="82" font-size="16" font-weight="800" fill="#002857" text-anchor="middle">대출 모집인용</text>
-        <text x="986" y="104" font-size="16" font-weight="800" fill="#002857" text-anchor="middle">조회 서비스</text>
-        <rect x="884" y="120" width="60" height="40" rx="4" fill="#E8EEF6" stroke="#9AA3B2"/>
-        <rect x="956" y="120" width="60" height="40" rx="4" fill="#E8EEF6" stroke="#9AA3B2"/>
-        <rect x="1028" y="120" width="60" height="40" rx="4" fill="#E8EEF6" stroke="#9AA3B2"/>
-        <text x="914" y="146" font-size="13" fill="#384152" text-anchor="middle">고객번호</text>
-        <text x="986" y="146" font-size="13" fill="#384152" text-anchor="middle">고객번호</text>
-        <text x="1058" y="146" font-size="13" fill="#384152" text-anchor="middle">고객번호</text>
+        <!-- 바깥: 사람과 확인 수준 -->
+        <g stroke="#4F9A3B" stroke-width="4" stroke-linecap="round" fill="none"><circle cx="196" cy="306" r="11" fill="#4F9A3B" stroke="none"/><path d="M196,317 V343 M196,325 L183,336 M196,325 L209,336 M196,343 L187,361 M196,343 L205,361"/></g>
+        <text x="174" y="344" font-size="15" font-weight="800" fill="#4F9A3B" text-anchor="end">고객</text>
+        <text x="310" y="326" font-size="15" font-weight="800" fill="#4F9A3B" text-anchor="middle">아이디 · 비밀번호 + 2차 인증 ✔</text>
+        <g stroke="#D93025" stroke-width="4" stroke-linecap="round" fill="none"><circle cx="800" cy="306" r="11" fill="#D93025" stroke="none"/><path d="M800,317 V343 M800,325 L787,336 M800,325 L813,336 M800,343 L791,361 M800,343 L809,361"/></g>
+        <text x="822" y="344" font-size="15" font-weight="800" fill="#D93025">범인</text>
+        <path d="M784,322 C760,316 740,300 726,280" stroke="#D93025" stroke-width="3" stroke-dasharray="6 5" fill="none" marker-end="url(#td-r)"/>
+        <text x="652" y="326" font-size="15" font-weight="800" fill="#D93025" text-anchor="middle">확인이 허술 ✘</text>
+        <text x="652" y="346" font-size="13" fill="#687284" text-anchor="middle">(은행 설명 · 방법은 조사 중)</text>
 
         <!-- 고객번호로 다른 서비스까지 -->
-        <line x1="986" y1="186" x2="986" y2="226" stroke="#002857" stroke-width="3" marker-end="url(#gw-n)"/>
-        <text x="1000" y="212" font-size="13" fill="#687284">얻은 고객번호로</text>
-        <rect x="860" y="234" width="252" height="108" rx="12" fill="#FDECEA" stroke="#F3B4AE" stroke-width="1.5"/>
-        <text x="986" y="264" font-size="16" font-weight="800" fill="#D93025" text-anchor="middle">다른 서비스까지 조회</text>
-        <text x="986" y="292" font-size="15" fill="#0F1726" text-anchor="middle">이름 · 전화번호 · 연소득</text>
-        <text x="986" y="316" font-size="15" fill="#0F1726" text-anchor="middle">대출한도 · 일부 주민번호</text>
-        <text x="986" y="336" font-size="13" fill="#687284" text-anchor="middle">고객 약 2만 5천 명</text>
+        <line x1="862" y1="116" x2="890" y2="116" stroke="#002857" stroke-width="3" marker-end="url(#td-n)"/>
+        <rect x="896" y="40" width="244" height="152" rx="12" fill="#FDECEA" stroke="#F3B4AE" stroke-width="1.5"/>
+        <text x="1018" y="64" font-size="12" fill="#687284" text-anchor="middle">얻은 고객번호로</text>
+        <text x="1018" y="86" font-size="16" font-weight="800" fill="#D93025" text-anchor="middle">다른 서비스까지 조회</text>
+        <text x="1018" y="114" font-size="15" fill="#0F1726" text-anchor="middle">이름 · 전화번호 · 연소득</text>
+        <text x="1018" y="138" font-size="15" fill="#0F1726" text-anchor="middle">대출한도 · 일부 주민번호</text>
+        <text x="1018" y="172" font-size="14" font-weight="700" fill="#687284" text-anchor="middle">고객 약 2만 5천 명</text>
+        <rect x="896" y="210" width="244" height="78" rx="12" fill="#F4F6F9"/>
+        <text x="1018" y="242" font-size="15" font-weight="800" fill="#384152" text-anchor="middle">+ AI로 자동화했을 가능성</text>
+        <text x="1018" y="268" font-size="13" fill="#687284" text-anchor="middle">(보안업계 · 조사 중)</text>
       </svg>
-      <div class="note" style="margin-top:14px">정문(로그인)을 아무리 잘 지켜도 담을 넘으면 같은 곳에 닿습니다. 그래서 <b>안에서도 요청마다 “볼 권한이 있는지”</b>를 다시 확인해야 합니다 → 다음 장: 인가</div>
-      <p class="sub" style="margin-top:8px; font-size:16px">근거: 은행 발표 — 대출 모집인용 조회 서비스에 “외부에서 인증을 우회하는 비정상적인 방법”으로 접근, 여기서 얻은 고객번호로 다른 서비스의 고객 정보 탈취 · 우회 방법은 조사 중 (<a style="color:var(--navy)" href="https://v.daum.net/v/20261001123012747">국민일보 2026-10-01</a>)</p>
-    </div>
-  </section>
-
-  <section class="slide">
-    <div class="slide-head"><h2>로그인했다고 다 볼 수 있는 건 아닙니다: 인증과 인가</h2><span class="head-tag">보안 · 용어</span></div>
-    <div class="slide-body">
-      <!-- 인증 → 번호 바꿔 요청 → 인가 확인 여부에 따른 결과 (예시 화면) -->
-      <svg viewBox="4 0 1150 334" style="display:block; width:100%; height:auto; flex-shrink:0; font-family:inherit" role="img"
-           aria-label="① 아이디와 비밀번호로 로그인해 고객번호 1001로 인증, ② 주소의 customer=1001을 1002로만 바꿔 요청, ③ 서버가 권한을 확인하지 않으면 고객 1002의 정보가 보이고, 확인하면 볼 권한이 없다고 막는다">
-        <defs>
-          <marker id="aa-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9AA3B2"/></marker>
-        </defs>
-
-        <!-- ① 인증 -->
-        <text x="10" y="22" font-size="21" font-weight="800" fill="#002857">① 인증</text>
-        <text x="96" y="22" font-size="18" fill="#687284">“너 누구야?”</text>
-        <rect x="10" y="40" width="310" height="196" rx="14" fill="#fff" stroke="#D8DEE9" stroke-width="1.5"/>
-        <text x="34" y="74" font-size="17" font-weight="700" fill="#0F1726">로그인</text>
-        <rect x="34" y="88" width="262" height="36" rx="8" fill="#F4F6F9" stroke="#D8DEE9"/>
-        <text x="48" y="112" font-size="15" fill="#687284">아이디</text><text x="118" y="112" font-size="15" fill="#0F1726">amer01</text>
-        <rect x="34" y="132" width="262" height="36" rx="8" fill="#F4F6F9" stroke="#D8DEE9"/>
-        <text x="48" y="156" font-size="15" fill="#687284">비밀번호</text><text x="118" y="157" font-size="15" fill="#0F1726">••••••••</text>
-        <rect x="34" y="180" width="262" height="38" rx="8" fill="#002857"/>
-        <text x="165" y="205" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">로그인</text>
-        <circle cx="22" cy="262" r="11" fill="#4F9A3B"/><path d="M16,262 l4,4 l8,-8" stroke="#fff" stroke-width="2.4" fill="none"/>
-        <text x="42" y="268" font-size="17" font-weight="700" fill="#4F9A3B">본인 확인 · 고객번호 1001</text>
-        <text x="10" y="302" font-size="15" fill="#687284">뚫는 예: 크리덴셜 스터핑</text>
-        <text x="10" y="324" font-size="15" fill="#687284">다른 곳에서 털린 비밀번호를 대입</text>
-
-        <line x1="332" y1="138" x2="368" y2="138" stroke="#9AA3B2" stroke-width="2.5" marker-end="url(#aa-arrow)"/>
-
-        <!-- ② 번호만 바꿔 요청 -->
-        <text x="380" y="22" font-size="21" font-weight="800" fill="#002857">② 번호만 바꿔 요청</text>
-        <rect x="380" y="40" width="310" height="196" rx="14" fill="#fff" stroke="#D8DEE9" stroke-width="1.5"/>
-        <path d="M380,54 a14,14 0 0 1 14,-14 h282 a14,14 0 0 1 14,14 v18 h-310 z" fill="#F4F6F9"/>
-        <circle cx="398" cy="57" r="4.5" fill="#D8DEE9"/><circle cx="412" cy="57" r="4.5" fill="#D8DEE9"/><circle cx="426" cy="57" r="4.5" fill="#D8DEE9"/>
-        <text x="398" y="100" font-size="14" fill="#687284">내 정보 조회</text>
-        <rect x="396" y="108" width="278" height="36" rx="8" fill="#F4F6F9" stroke="#D8DEE9"/>
-        <text x="408" y="132" font-size="15" fill="#0F1726" style="font-family:ui-monospace,Consolas,monospace">…/loan?customer=1001</text>
-        <path d="M535,152 v18" stroke="#D93025" stroke-width="2.5" marker-end="url(#aa-arrow)"/>
-        <text x="548" y="167" font-size="14" fill="#D93025" font-weight="700">번호만 바꿈</text>
-        <rect x="396" y="180" width="278" height="36" rx="8" fill="#FDECEA" stroke="#D93025" stroke-width="1.5"/>
-        <text x="408" y="204" font-size="15" fill="#0F1726" style="font-family:ui-monospace,Consolas,monospace">…/loan?customer=<tspan fill="#D93025" font-weight="700">1002</tspan></text>
-        <text x="380" y="268" font-size="17" font-weight="700" fill="#0F1726">로그인한 상태 그대로</text>
-        <text x="380" y="302" font-size="15" fill="#687284">신한은행 사례: 얻은 고객번호로</text>
-        <text x="380" y="324" font-size="15" fill="#687284">다른 서비스까지 조회 (은행 발표)</text>
-
-        <line x1="702" y1="138" x2="738" y2="138" stroke="#9AA3B2" stroke-width="2.5" marker-end="url(#aa-arrow)"/>
-
-        <!-- ③ 인가 -->
-        <text x="750" y="22" font-size="21" font-weight="800" fill="#002857">③ 인가</text>
-        <text x="836" y="22" font-size="18" fill="#687284">“이거 볼 권한 있어?”</text>
-        <rect x="750" y="40" width="400" height="92" rx="14" fill="#FDECEA" stroke="#F3B4AE" stroke-width="1.5"/>
-        <text x="772" y="68" font-size="15" font-weight="800" fill="#D93025">확인하지 않으면</text>
-        <text x="772" y="94" font-size="16" fill="#0F1726">고객 1002 · 이름 · 연소득 · 대출한도</text>
-        <text x="772" y="120" font-size="17" font-weight="800" fill="#D93025">✕ 남의 정보가 그대로 보입니다</text>
-        <rect x="750" y="144" width="400" height="92" rx="14" fill="#EAF4E6" stroke="#BFDDB4" stroke-width="1.5"/>
-        <text x="772" y="172" font-size="15" font-weight="800" fill="#4F9A3B">확인하면</text>
-        <text x="772" y="198" font-size="16" fill="#0F1726">“이 정보를 볼 권한이 없습니다”</text>
-        <text x="772" y="224" font-size="17" font-weight="800" fill="#4F9A3B">✓ 내 정보(1001)만 보입니다</text>
-        <text x="750" y="268" font-size="17" font-weight="700" fill="#0F1726">요청마다 서버가 확인합니다</text>
-        <text x="750" y="302" font-size="15" fill="#687284">로그인은 건물 정문, 인가는 방마다 있는 문</text>
-        <text x="750" y="324" font-size="15" fill="#687284">정문을 지켜도 방문이 다 열려 있으면 소용없습니다</text>
-      </svg>
-      <div class="note" style="margin-top:16px">신한은행 사례: ①② 인증 우회 · 고객번호로 다른 서비스 조회는 <b>은행 발표</b> · ③ 인가 허점은 <b>보안업체 분석</b> · 크리덴셜 스터핑은 <b>가능성</b></div>
-      <div class="note note--warn">막는 법 — 나: 사이트마다 다른 비밀번호 · 2단계 인증 / 만드는 쪽: 로그인 시도 횟수 제한 · 요청마다 <b>“이 사람이 볼 수 있는 데이터인가”</b> 확인</div>
-      <p class="sub" style="margin-top:8px; font-size:16px">출처: <a style="color:var(--navy)" href="https://v.daum.net/v/20261001123012747">국민일보 2026-10-01(다음 뉴스)</a> · <a style="color:var(--navy)" href="https://www.boannews.com/news/articleView.html?idxno=146174">보안뉴스 2026-10-02</a> · <a style="color:var(--navy)" href="https://fnnews.com/news/202610081452408589">파이낸셜뉴스 2026-10-08</a></p>
+      <div class="note" style="margin-top:14px">손님 문을 아무리 잘 지켜도 관계자 문 하나가 허술하면 같은 곳에 닿습니다. 그래서 <b>문마다 같은 수준으로 확인하고, 들어온 뒤에도 요청마다 “볼 권한이 있는지”(인가)</b>를 확인해야 합니다</div>
+      <p class="sub" style="margin-top:8px; font-size:16px">근거: 은행 설명 — 대출 모집인 전용 조회 서비스에 정상적인 본인 확인 없이 무단 접근, 얻은 고객번호로 다른 정보 탈취 · “정식 인증이 필요한 고객용 뱅킹 앱과는 관련 없음” (<a style="color:var(--navy)" href="https://www.yna.co.kr/view/AKR20261001145452002">연합뉴스 2026-10-01</a> · <a style="color:var(--navy)" href="https://v.daum.net/v/20261001123012747">국민일보 2026-10-01</a>)</p>
     </div>
   </section>
 
@@ -2708,39 +2675,12 @@ body { background: var(--bg); }
     </div>
   </section>
 
-  <section class="slide">
-    <div class="slide-head"><h2>오늘 본 사례, 이렇게 막고 실습에 적용합니다</h2><span class="head-tag">보안 · 정리</span></div>
-    <div class="slide-body">
-      <div class="kv kv--3">
-        <div class="kv-item">
-          <p class="kv-name">① 로그인했다고 다 볼 수 있으면 안 됩니다</p>
-          <p class="kv-when" style="margin-top:4px; padding-top:0; border-top:0">신한은행 사례</p>
-          <p class="kv-like">요청마다 <b>볼 권한(인가)</b>을 확인합니다</p>
-          <p class="kv-when">우리 앱: 실습 ④ 배포 전 보안 점검</p>
-        </div>
-        <div class="kv-item">
-          <p class="kv-name">② 자료 속 숨은 지시</p>
-          <p class="kv-when" style="margin-top:4px; padding-top:0; border-top:0">프롬프트 인젝션</p>
-          <p class="kv-like">맡기기 전 · 하는 중 · 끝난 뒤 <b>세 번 확인</b>합니다</p>
-          <p class="kv-when">계획부터 받기 · 중요한 일은 내 승인</p>
-        </div>
-        <div class="kv-item">
-          <p class="kv-name">③ AI는 내 권한 그대로 움직입니다</p>
-          <p class="kv-when" style="margin-top:4px; padding-top:0; border-top:0">Claude 확장프로그램</p>
-          <p class="kv-like">맡길 <b>범위를 좁히고</b>, 민감정보는 프롬프트 · 파일에 넣지 않습니다</p>
-          <p class="kv-when">실습: 공개 페이지 · 작업 폴더만</p>
-        </div>
-      </div>
-      <div class="note" style="margin-top:22px"><b>권한을 확인하고, 맡긴 일을 확인하고, 범위를 좁힙니다.</b> 이 세 가지를 기억하고 실습으로 넘어갑니다</div>
-    </div>
-  </section>
-
   <section class="slide slide--chapter" data-chapter="실습 ① Claude 확장프로그램으로 조사하기">
     <div class="chapter">
       <p class="ch-eyebrow">CHAPTER 3</p>
       <h2 class="ch-title">실습 ① Claude 확장프로그램으로 조사하기</h2>
       <div class="ch-rule"></div>
-      <ul class="ch-keys"><li>도구 고르기</li><li>설치 · 연결</li><li>작업 폴더 만들기</li><li>조사 요청</li><li>작업 폴더에 엑셀</li></ul>
+      <ul class="ch-keys"><li>도구 고르기</li><li>설치 · 사이트 권한</li><li>작업 폴더 · 조사 요청</li><li>작업 폴더에 엑셀</li><li>시연: Gmail · Computer use</li></ul>
     </div>
   </section>
 
@@ -2793,7 +2733,7 @@ body { background: var(--bg); }
           <p class="shot-cap">내 Chrome에 Claude 탭 그룹이 열리면 연결 완료</p>
         </div>
       </div>
-      <div class="note">사이트별 권한은 확장프로그램 설정에서 관리합니다. Team 요금제는 관리자가 허용 · 차단 목록을 정합니다</div>
+      <div class="note">Claude가 들어갈 수 있는 사이트는 데스크톱 앱 설정에서 관리할 수 있습니다 (뒤에서 소개) · Team 요금제는 관리자가 허용 · 차단 목록을 정합니다</div>
       <div class="note note--warn">회사 계정은 관리자가 확장프로그램을 막아 두었을 수 있으니 수업 전에 확인합니다</div>
     </div>
   </section>
@@ -2812,7 +2752,7 @@ body { background: var(--bg); }
         </div>
         <div class="split-side" style="flex-basis:430px">
           <svg viewBox="0 0 430 250" style="display:block; width:100%; height:auto; font-family:inherit" role="img"
-               aria-label="바탕화면 안에 아머스포츠_심화교육 폴더가 있고, 그 안에 실습 ①에서 저장하는 제품조사_살로몬.xlsx와 실습 ③에서 만드는 price-dashboard 앱 폴더가 있다">
+               aria-label="바탕화면 안에 아머스포츠_심화교육 폴더가 있고, 그 안에 실습 ①에서 저장하는 제품조사_살로몬.xlsx와 실습 ②에서 만드는 price-dashboard 앱 폴더가 있다">
             <rect x="0" y="0" width="430" height="250" rx="14" fill="#F4F6F9"/>
             <path d="M24,22 h22 l6,7 h30 v20 h-58 z" fill="#9AA3B2"/>
             <text x="92" y="44" font-size="18" fill="#384152">바탕화면</text>
@@ -2827,12 +2767,79 @@ body { background: var(--bg); }
             <text x="166" y="185" font-size="13" fill="#687284">실습 ①에서 저장</text>
             <path d="M128,198 h18 l5,6 h25 v20 h-48 z" fill="#6E9BF0"/>
             <text x="186" y="214" font-size="16" font-weight="700" fill="#0F1726">price-dashboard/</text>
-            <text x="186" y="233" font-size="13" fill="#687284">실습 ③에서 만드는 앱 (GitHub에는 이것만)</text>
+            <text x="186" y="233" font-size="13" fill="#687284">실습 ②에서 만드는 앱 (GitHub에는 이것만)</text>
           </svg>
         </div>
       </div>
       <div class="note">Claude에게 바탕화면 전체가 아니라 <b>이 폴더 하나만</b> 열어 줍니다. 보안에서 본 ‘맡길 범위를 먼저 좁히기’입니다</div>
       <div class="note note--warn">엑셀은 앱 폴더 밖에 두어 GitHub에 올라가지 않게 합니다. 수업이 끝나면 이 폴더째 정리하면 됩니다</div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-head"><h2>Claude가 들어갈 수 있는 사이트를 관리할 수 있습니다</h2><span class="head-tag">실습 ① · 참고 · 사이트 권한</span></div>
+    <div class="slide-body">
+      <div class="split" style="align-items:flex-start; gap:32px">
+        <div class="split-main">
+          <ol class="steps">
+            <li><b>Claude 데스크톱 앱</b> › 설정 › <b>Chrome용 Claude</b></li>
+            <li>사이트 권한의 <b>모든 사이트 기본값</b>을 <b>“모든 사이트 차단”</b>으로 바꿀 수 있습니다</li>
+            <li><b>+ 웹사이트 추가</b>로 허용할 사이트만 넣을 수 있습니다 (예: salomon.co.kr)</li>
+          </ol>
+          <div class="ans" style="margin-top:16px"><p class="ans-title">작업 중에 권한을 물으면</p><ul><li><b>이번만 허용</b> · 다음 동작 때 다시 묻습니다 (가장 안전)</li><li><b>이 사이트에서 항상 허용</b> · 믿을 수 있는 사이트만</li><li><b>거절</b> · 내가 맡긴 일이 아니면</li></ul></div>
+        </div>
+        <div class="split-side" style="flex-basis:440px">
+          <div class="shot" style="text-align:center"><img style="max-height:360px; width:auto; max-width:100%; display:inline-block" src="images/c-chrome-site-permissions.png" alt="Claude 데스크톱 앱 설정의 Chrome용 Claude 화면: Claude in Chrome 사용 설정 켜짐, 사이트 권한의 모든 사이트 기본값 모든 사이트 차단, 허용된 사이트 목록과 웹사이트 추가 버튼"></div>
+          <p class="shot-cap">기본을 차단으로 두면, 허용한 사이트에서만 작동합니다</p>
+        </div>
+      </div>
+      <div class="note">오늘 실습에서는 설정을 바꾸지 않습니다 · “항상 허용”이어도 파일 다운로드 · 민감한 정보 입력 · 권한 부여는 매번 따로 묻습니다 · <a style="color:var(--navy)" href="https://support.claude.com/en/articles/12902446-manage-claude-in-chrome-permissions">권한 관리 공식 안내</a></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-head"><h2>회사 계정은 관리자가 먼저 정합니다</h2><span class="head-tag">실습 ① · 참고 · 사이트 권한</span></div>
+    <div class="slide-body">
+      <div class="split" style="align-items:center; gap:36px">
+        <div class="split-main" style="flex:0 0 760px">
+          <svg viewBox="0 0 760 360" style="display:block; width:100%; height:auto; font-family:inherit" role="img"
+               aria-label="개념도: 회사 관리자 설정이 가장 바깥, 그 안에 내 설정, 그 안에 작업 중 확인이 있는 세 단계 통제">
+            <rect x="0" y="0" width="760" height="112" rx="14" fill="#FDECEA" stroke="#F3B4AE" stroke-width="1.5"/>
+            <circle cx="34" cy="34" r="17" fill="#002857"/><text x="34" y="40" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+            <text x="64" y="41" font-size="20" font-weight="800" fill="#002857">회사 관리자</text>
+            <text x="64" y="66" font-size="15" fill="#687284">조직 설정 › Claude in Chrome</text>
+            <text x="400" y="30" font-size="16" fill="#0F1726">· 팀 전체 사용 켜기 · 끄기</text>
+            <text x="400" y="54" font-size="16" fill="#0F1726">· 허용 목록: 이 사이트만</text>
+            <text x="400" y="78" font-size="16" fill="#0F1726">· 차단 목록: 절대 안 됨</text>
+            <rect x="640" y="76" width="108" height="26" rx="13" fill="#D93025"/><text x="694" y="94" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">차단이 우선</text>
+            <path d="M380,116 v12" stroke="#9AA3B2" stroke-width="2.5"/><path d="M374,124 l6,8 l6,-8" fill="#9AA3B2"/>
+            <rect x="0" y="136" width="760" height="100" rx="14" fill="#E8EEF6" stroke="#C9D6E8" stroke-width="1.5"/>
+            <circle cx="34" cy="170" r="17" fill="#002857"/><text x="34" y="176" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+            <text x="64" y="177" font-size="20" font-weight="800" fill="#002857">내 설정</text>
+            <text x="64" y="202" font-size="15" fill="#687284">데스크톱 앱 › Chrome용 Claude (앞 장)</text>
+            <text x="400" y="166" font-size="16" fill="#0F1726">· 기본값: 모든 사이트 차단</text>
+            <text x="400" y="190" font-size="16" fill="#0F1726">· 허용할 사이트만 추가</text>
+            <path d="M380,240 v12" stroke="#9AA3B2" stroke-width="2.5"/><path d="M374,248 l6,8 l6,-8" fill="#9AA3B2"/>
+            <rect x="0" y="260" width="760" height="100" rx="14" fill="#EAF4E6" stroke="#BFDDB4" stroke-width="1.5"/>
+            <circle cx="34" cy="294" r="17" fill="#002857"/><text x="34" y="300" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+            <text x="64" y="301" font-size="20" font-weight="800" fill="#002857">작업 중 확인</text>
+            <text x="64" y="326" font-size="15" fill="#687284">확장프로그램이 그때그때 묻기</text>
+            <text x="400" y="290" font-size="16" fill="#0F1726">· 이번만 허용 · 항상 허용 · 거절</text>
+            <text x="400" y="314" font-size="16" fill="#0F1726">· 다운로드 · 민감정보는 매번</text>
+          </svg>
+          <p class="shot-cap">개념도 · 실제 관리자 화면이 아닙니다</p>
+        </div>
+        <div class="split-side">
+          <p class="lead" style="margin:0 0 14px">바깥이 안쪽을 이깁니다</p>
+          <ul class="dash-list" style="font-size:19px">
+            <li>회사가 <b>차단</b>한 사이트는 내가 허용해도 열리지 않습니다</li>
+            <li>회사가 <b>허용 목록</b>을 정하면 그 안에서만 내 설정이 의미 있습니다</li>
+            <li>확장프로그램이 막히면 관리자가 팀 전체를 꺼 두었을 수 있습니다</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note" style="margin-top:14px">Team · Enterprise 요금제 · 관리자는 “좁은 허용 목록으로 시작해 점점 넓히기”를 권장받습니다 · 사이트가 안 열리면 회사 관리자에게 문의합니다</div>
+      <p class="sub" style="margin-top:8px; font-size:16px">출처: <a style="color:var(--navy)" href="https://support.claude.com/en/articles/13065128-claude-for-chrome-admin-controls">Claude in Chrome 관리자 설정 (공식 안내)</a> · <a style="color:var(--navy)" href="https://support.claude.com/en/articles/12902446-manage-claude-in-chrome-permissions">Claude in Chrome 권한 관리 (공식 안내)</a></p>
     </div>
   </section>
 
@@ -2876,27 +2883,6 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>웹을 대신 읽는 두 가지 방법</h2><span class="head-tag">실습 ① · Browser use</span></div>
-    <div class="slide-body">
-      <div class="kv kv--2">
-        <div class="kv-item">
-          <p class="kv-name">손님으로 읽기</p>
-          <p class="kv-when" style="margin-top:4px; padding-top:0; border-top:0">Claude Code가 주소로 바로 가져옴</p>
-          <p class="kv-like">로그인 없이 읽습니다. 빠르고 간단합니다</p>
-          <p class="kv-when">맞는 곳: <b>공개 페이지</b> (방금 본 살로몬 신상품 목록)</p>
-        </div>
-        <div class="kv-item" style="background:#EAF4E6">
-          <p class="kv-name">내 Chrome 그대로</p>
-          <p class="kv-when" style="margin-top:4px; padding-top:0; border-top:0">Claude 확장프로그램</p>
-          <p class="kv-like">내가 로그인한 상태 그대로 들어갑니다. 비밀번호를 넘기지 않습니다</p>
-          <p class="kv-when">맞는 곳: <b>로그인이 필요한 곳</b> (Gmail · 사내 시스템 · 파트너 포털)</p>
-        </div>
-      </div>
-      <div class="note note--warn" style="margin-top:20px">내 Chrome 그대로 = <b>내 권한 전부</b>로 움직입니다. 그래서 다음 장들에서 들어갈 수 있는 사이트를 정합니다</div>
-    </div>
-  </section>
-
-  <section class="slide">
     <div class="slide-head"><h2>시연: 로그인이 필요한 일은 확장프로그램이 합니다</h2><span class="head-tag">실습 ① · 강사 시연</span></div>
     <div class="slide-body">
       <p class="lead" style="margin:0 0 20px">방금 같은 공개 페이지는 Claude Code만으로도 읽을 수 있습니다. 확장프로그램이 필요한 건 <b>로그인해야 보이는 곳</b>입니다</p>
@@ -2905,93 +2891,29 @@ body { background: var(--bg); }
         <div class="flow-arrow">→</div>
         <div class="flow-step is-now"><p class="flow-no">2</p><p class="flow-name">내 Chrome의 로그인 그대로</p><p class="flow-desc">확장프로그램이 Gmail을 열고 신제품 홍보 메일 초안을 씁니다</p></div>
         <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">3</p><p class="flow-name">보내기는 하지 않습니다</p><p class="flow-desc">발송처럼 중요한 일은 내가 확인하고 합니다 (33장 ‘하는 중’)</p></div>
+        <div class="flow-step"><p class="flow-no">3</p><p class="flow-name">보내기는 하지 않습니다</p><p class="flow-desc">발송처럼 중요한 일은 내가 확인하고 합니다 (27장 ‘하는 중’)</p></div>
       </div>
       <div class="note" style="margin-top:22px">공개 페이지는 Claude Code로, <b>로그인이 필요한 곳은 Claude 확장프로그램으로</b> · 비밀번호를 넘기지 않고 내 로그인 그대로 씁니다</div>
-      <div class="note note--warn">강사 시연입니다. 수업에서는 메일을 열지 않습니다 (36장)</div>
+      <div class="note note--warn">강사 시연입니다. 수업에서는 메일을 열지 않습니다 (30장)</div>
     </div>
   </section>
 
-  <section class="slide">
-    <div class="slide-head"><h2>Claude가 들어갈 수 있는 사이트를 정합니다</h2><span class="head-tag">실습 ① · 사이트 권한</span></div>
-    <div class="slide-body">
-      <div class="split" style="align-items:flex-start; gap:32px">
-        <div class="split-main">
-          <ol class="steps">
-            <li><b>Claude 데스크톱 앱</b> › 설정 › <b>Chrome용 Claude</b></li>
-            <li>사이트 권한의 <b>모든 사이트 기본값</b>을 <b>“모든 사이트 차단”</b>으로 둡니다</li>
-            <li><b>+ 웹사이트 추가</b>로 필요한 사이트만 넣습니다 (오늘은 salomon.co.kr)</li>
-          </ol>
-          <div class="ans" style="margin-top:16px"><p class="ans-title">작업 중에 권한을 물으면</p><ul><li><b>이번만 허용</b> · 다음 동작 때 다시 묻습니다 (가장 안전)</li><li><b>이 사이트에서 항상 허용</b> · 믿을 수 있는 사이트만</li><li><b>거절</b> · 내가 맡긴 일이 아니면</li></ul></div>
-        </div>
-        <div class="split-side" style="flex-basis:440px">
-          <div class="shot" style="text-align:center"><img style="max-height:360px; width:auto; max-width:100%; display:inline-block" src="images/c-chrome-site-permissions.png" alt="Claude 데스크톱 앱 설정의 Chrome용 Claude 화면: Claude in Chrome 사용 설정 켜짐, 사이트 권한의 모든 사이트 기본값 모든 사이트 차단, 허용된 사이트 목록과 웹사이트 추가 버튼"></div>
-          <p class="shot-cap">기본은 차단, 허용한 사이트에서만 작동합니다</p>
-        </div>
-      </div>
-      <div class="note">“항상 허용”이어도 파일 다운로드 · 민감한 정보 입력 · 권한 부여는 매번 따로 묻습니다 · <a style="color:var(--navy)" href="https://support.claude.com/en/articles/12902446-manage-claude-in-chrome-permissions">권한 관리 공식 안내</a></div>
+  <section class="slide slide--chapter">
+    <div class="chapter">
+      <p class="ch-eyebrow">Browser use 다음</p>
+      <h2 class="ch-title">Computer use<br>화면을 보고 PC를 조작하기</h2>
+      <div class="ch-rule"></div>
     </div>
-  </section>
-
-  <section class="slide">
-    <div class="slide-head"><h2>회사 계정은 관리자가 먼저 정합니다</h2><span class="head-tag">실습 ① · 사이트 권한</span></div>
-    <div class="slide-body">
-      <div class="split" style="align-items:center; gap:36px">
-        <div class="split-main" style="flex:0 0 760px">
-          <svg viewBox="0 0 760 360" style="display:block; width:100%; height:auto; font-family:inherit" role="img"
-               aria-label="개념도: 회사 관리자 설정이 가장 바깥, 그 안에 내 설정, 그 안에 작업 중 확인이 있는 세 단계 통제">
-            <rect x="0" y="0" width="760" height="112" rx="14" fill="#FDECEA" stroke="#F3B4AE" stroke-width="1.5"/>
-            <circle cx="34" cy="34" r="17" fill="#002857"/><text x="34" y="40" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">1</text>
-            <text x="64" y="41" font-size="20" font-weight="800" fill="#002857">회사 관리자</text>
-            <text x="64" y="66" font-size="15" fill="#687284">조직 설정 › Claude in Chrome</text>
-            <text x="400" y="30" font-size="16" fill="#0F1726">· 팀 전체 사용 켜기 · 끄기</text>
-            <text x="400" y="54" font-size="16" fill="#0F1726">· 허용 목록: 이 사이트만</text>
-            <text x="400" y="78" font-size="16" fill="#0F1726">· 차단 목록: 절대 안 됨</text>
-            <rect x="640" y="76" width="108" height="26" rx="13" fill="#D93025"/><text x="694" y="94" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">차단이 우선</text>
-            <path d="M380,116 v12" stroke="#9AA3B2" stroke-width="2.5"/><path d="M374,124 l6,8 l6,-8" fill="#9AA3B2"/>
-            <rect x="0" y="136" width="760" height="100" rx="14" fill="#E8EEF6" stroke="#C9D6E8" stroke-width="1.5"/>
-            <circle cx="34" cy="170" r="17" fill="#002857"/><text x="34" y="176" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">2</text>
-            <text x="64" y="177" font-size="20" font-weight="800" fill="#002857">내 설정</text>
-            <text x="64" y="202" font-size="15" fill="#687284">데스크톱 앱 › Chrome용 Claude (47장)</text>
-            <text x="400" y="166" font-size="16" fill="#0F1726">· 기본값: 모든 사이트 차단</text>
-            <text x="400" y="190" font-size="16" fill="#0F1726">· 허용할 사이트만 추가</text>
-            <path d="M380,240 v12" stroke="#9AA3B2" stroke-width="2.5"/><path d="M374,248 l6,8 l6,-8" fill="#9AA3B2"/>
-            <rect x="0" y="260" width="760" height="100" rx="14" fill="#EAF4E6" stroke="#BFDDB4" stroke-width="1.5"/>
-            <circle cx="34" cy="294" r="17" fill="#002857"/><text x="34" y="300" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">3</text>
-            <text x="64" y="301" font-size="20" font-weight="800" fill="#002857">작업 중 확인</text>
-            <text x="64" y="326" font-size="15" fill="#687284">확장프로그램이 그때그때 묻기</text>
-            <text x="400" y="290" font-size="16" fill="#0F1726">· 이번만 허용 · 항상 허용 · 거절</text>
-            <text x="400" y="314" font-size="16" fill="#0F1726">· 다운로드 · 민감정보는 매번</text>
-          </svg>
-          <p class="shot-cap">개념도 · 실제 관리자 화면이 아닙니다</p>
-        </div>
-        <div class="split-side">
-          <p class="lead" style="margin:0 0 14px">바깥이 안쪽을 이깁니다</p>
-          <ul class="dash-list" style="font-size:19px">
-            <li>회사가 <b>차단</b>한 사이트는 내가 허용해도 열리지 않습니다</li>
-            <li>회사가 <b>허용 목록</b>을 정하면 그 안에서만 내 설정이 의미 있습니다</li>
-            <li>확장프로그램이 막히면 관리자가 팀 전체를 꺼 두었을 수 있습니다</li>
-          </ul>
-        </div>
-      </div>
-      <div class="note" style="margin-top:14px">Team · Enterprise 요금제 · 관리자는 “좁은 허용 목록으로 시작해 점점 넓히기”를 권장받습니다 · 사이트가 안 열리면 회사 관리자에게 문의합니다</div>
-      <p class="sub" style="margin-top:8px; font-size:16px">출처: <a style="color:var(--navy)" href="https://support.claude.com/en/articles/13065128-claude-for-chrome-admin-controls">Claude in Chrome 관리자 설정 (공식 안내)</a> · <a style="color:var(--navy)" href="https://support.claude.com/en/articles/12902446-manage-claude-in-chrome-permissions">Claude in Chrome 권한 관리 (공식 안내)</a></p>
-    </div>
-  </section>
-
-  <section class="slide ref-wrap">
-    <h2 style="display:none">Computer use · 화면을 보고 PC를 조작하기</h2>
-    <iframe src="ref-theory.html#21" title="Computer use · 화면을 보고 PC를 조작하기" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">Computer use · 보고, 판단하고, 누르고, 다시 봅니다</h2>
-    <iframe src="ref-theory.html#22" title="Computer use · 보고, 판단하고, 누르고, 다시 봅니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#22" title="Computer use · 보고, 판단하고, 누르고, 다시 봅니다" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide ref-wrap">
     <h2 style="display:none">Computer use · Browser use의 상위호환일까?</h2>
-    <iframe src="ref-theory.html#23" title="Computer use · Browser use의 상위호환일까?" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
+    <iframe src="ref-theory.html?v=4#23" title="Computer use · Browser use의 상위호환일까?" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide">
@@ -3017,17 +2939,17 @@ body { background: var(--bg); }
     </div>
   </section>
 
-  <section class="slide slide--chapter" data-chapter="실습 ③ 엑셀을 대시보드로">
+  <section class="slide slide--chapter" data-chapter="실습 ② 엑셀을 대시보드로">
     <div class="chapter">
       <p class="ch-eyebrow">CHAPTER 4</p>
-      <h2 class="ch-title">실습 ③ 엑셀을 대시보드로</h2>
+      <h2 class="ch-title">실습 ② 엑셀을 대시보드로</h2>
       <div class="ch-rule"></div>
       <ul class="ch-keys"><li>Claude Code + Claude 확장프로그램</li><li>작업 폴더에 Next.js 앱</li><li>엑셀 읽기 · 연습용 DB</li><li>탭 화면 · 알림 · 제품 상세</li><li>DESIGN.md로 디자인</li><li>갱신 시험 · 이전과 비교</li><li>자동화 · Claude Code 루틴</li></ul>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>에이전트에게 맡길 일, 프로그램으로 만들 일</h2><span class="head-tag">실습 ③ · 시작하기 전에</span></div>
+    <div class="slide-head"><h2>에이전트에게 맡길 일, 프로그램으로 만들 일</h2><span class="head-tag">실습 ② · 시작하기 전에</span></div>
     <div class="slide-body">
       <table class="agenda agenda--sm">
         <thead><tr><th></th><th>에이전트에게 맡기기</th><th>프로그램으로 만들기</th></tr></thead>
@@ -3044,7 +2966,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>작업 폴더의 엑셀로 대시보드 앱을 만듭니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>작업 폴더의 엑셀로 대시보드 앱을 만듭니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <ol class="steps">
         <li>작업 폴더(아머스포츠_심화교육)에서 Claude Code를 엽니다</li>
@@ -3056,12 +2978,12 @@ body { background: var(--bg); }
         <p>바로 위 작업 폴더의 제품조사_살로몬.xlsx를 읽어 첫 화면에 표로 보여 주세요 (제품명 · 카테고리 · 가격 · 통화 · 특징 · 제품URL · 확인일).</p>
         <p>GitHub에 올리거나 배포하지는 말고, 내 PC에서 켜서 열어 볼 주소를 알려 주세요.”</p>
       </div>
-      <div class="note">Next.js는 AxHub에 그대로 올릴 수 있는 웹 앱 틀입니다. 먼저 <b>내 PC에서</b> 내 엑셀로 화면을 띄워 보고, GitHub · AxHub 배포는 실습 ④에서 한 번에 합니다</div>
+      <div class="note">Next.js는 AxHub에 그대로 올릴 수 있는 웹 앱 틀입니다. 먼저 <b>내 PC에서</b> 내 엑셀로 화면을 띄워 보고, GitHub · AxHub 배포는 실습 ③에서 한 번에 합니다</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 만든 앱을 내 PC에서 엽니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 만든 앱을 내 PC에서 엽니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="ans" style="font-size:22px"><p class="ans-title">확인할 것</p><ul><li>만든 폴더: 작업 폴더 안의 <b>price-dashboard</b></li><li>주소 <span class="mono">http://localhost:3000</span>을 열면 <b>내 엑셀의 제품 표</b>가 보이는지</li><li>표의 행 수 = 엑셀 행 수 (머리글 제외 · 예시는 30행)</li><li>열 7개: 제품명 · 카테고리 · 가격 · 통화 · 특징 · 제품URL · 확인일</li></ul></div>
       <div class="note" style="margin-top:18px">앱 폴더를 Claude Code에서 처음 열 때 확인 창이 나오면 승인합니다 · 행 수가 다르면 “엑셀 행 수와 화면 행 수가 달라요. 확인해 줘”라고 요청합니다</div>
@@ -3070,7 +2992,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>읽은 엑셀은 DB에 쌓습니다: 먼저 내 PC의 연습용 DB에</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>읽은 엑셀은 DB에 쌓습니다: 먼저 내 PC의 연습용 DB에</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <p class="lead" style="margin:0 0 18px">엑셀을 화면에 띄웠으니, 이제 기록을 쌓을 곳을 정합니다</p>
       <div class="kv kv--2">
@@ -3090,34 +3012,35 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>읽은 엑셀을 내 PC 연습용 DB에 쌓습니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>읽은 엑셀을 내 PC 연습용 DB에 쌓습니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="pbox" data-app="Claude Code">
-        <p>“작업 폴더의 엑셀을 읽어 검사한 뒤 내 PC 연습용 DB에 저장하는 명령(npm run sync)을 만들어 주세요. Docker 없이 내 PC의 파일에 저장하고</p>
-        <p>(이 파일은 GitHub에 올리지 않게), 앱을 내 PC에서 켜 주세요.</p>
-        <p>동기화할 때마다 실행 기록(시각·행 수·성공 여부·실패 이유)을 남기고,</p>
-        <p>지난번 저장과 비교해 새로 생기거나 사라지거나 값이 바뀐 행을 표시해 주세요.</p>
-        <p>나중에 AxHub에 배포하면 DATABASE_URL 환경변수의 Postgres에 저장하도록 하고, AxHub 배포 설정 파일(axhub.yaml)도 만들어 주세요.”</p>
+        <p>“작업 폴더의 엑셀을 읽어서 내 PC에 기록으로 쌓아 두는 ‘동기화’ 기능을 만들어 주세요.</p>
+        <p>따로 설치할 프로그램 없이 앱 폴더 안의 파일 하나에 저장하고, 그 파일은 GitHub에 올라가지 않게 해 주세요.</p>
+        <p>저장하기 전에 엑셀 내용에 문제가 없는지 먼저 검사하고, 문제가 있으면 저장하지 말고 이유만 남겨 주세요.</p>
+        <p>동기화할 때마다 언제 · 몇 줄을 · 성공했는지 기록하고, 지난번과 비교해 새로 생기거나 없어지거나 바뀐 제품을 표시해 주세요.</p>
+        <p>나중에 AxHub에 올리면 AxHub가 붙여 주는 DB에 저장되도록 미리 준비해 주세요.</p>
+        <p>앞으로 제가 ‘동기화해 줘’라고만 하면 다시 실행되게 해 주시고, 앱도 내 PC에서 켜 주세요.”</p>
       </div>
-      <div class="note">연습용 DB는 앱 폴더 안의 파일(<span class="mono">data/local-db.json</span>)입니다. Docker 없이 이 파일로 화면 만들기 · 예약 · 갱신 시험을 모두 합니다</div>
-      <div class="note note--warn">AxHub DB(Postgres)는 배포한 앱에 붙어 있습니다. 배포한 뒤에는 배포 대시보드 화면에서 엑셀을 올려 AxHub DB에 쌓습니다(실습 ④)</div>
+      <div class="note">연습용 DB = 앱 폴더 안의 파일 하나입니다. 따로 설치할 것 없이 이 파일로 화면 만들기 · 예약 · 갱신 시험을 모두 합니다</div>
+      <div class="note note--warn">AxHub DB는 배포한 앱에 붙어 있습니다. 배포한 뒤에는 배포 대시보드 화면에서 엑셀을 올려 AxHub DB에 쌓습니다(실습 ③)</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · DB 저장을 요청하면 이렇게 답합니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · DB 저장을 요청하면 이렇게 답합니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div style="max-width:860px; margin:0 auto">
-        <div class="ans"><p class="ans-title">Claude Code 답에서 확인할 것</p><ul><li>실행한 명령: <span class='mono'>npm run sync</span> (작업 폴더 엑셀 → 검사 → DB)</li><li>저장한 곳: <b>내 PC 연습용 DB</b> (AxHub DB에는 아직 보내지 않음)</li><li>저장한 행 수: 엑셀 행 수와 같은지 (예시 앱은 <b>30행</b>)</li><li>첫 저장이라 비교 대상 없음 · 다음 동기화부터 신규 · 삭제 · 변경이 표시됨</li><li>대시보드 주소: <span class='mono'>http://localhost:3000</span></li></ul></div>
+        <div class="ans"><p class="ans-title">Claude Code 답에서 확인할 것</p><ul><li>실행한 것: <b>동기화</b> (작업 폴더 엑셀 → 검사 → DB)</li><li>저장한 곳: <b>내 PC 연습용 DB</b> (AxHub DB에는 아직 보내지 않음)</li><li>저장한 행 수: 엑셀 행 수와 같은지 (예시 앱은 <b>30행</b>)</li><li>첫 저장이라 비교 대상 없음 · 다음 동기화부터 신규 · 삭제 · 변경이 표시됨</li><li>대시보드 주소: <span class='mono'>http://localhost:3000</span></li></ul></div>
       </div>
       <div class="note">답이 길어도 확인할 것은 이 다섯 가지입니다. Claude Code 답의 저장 행 수가 엑셀 행 수와 같으면 다음 단계로 갑니다 (표 화면은 다음 단계에서 만듭니다)</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>사람의 확인을 자동 검사로 바꿉니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>사람의 확인을 자동 검사로 바꿉니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
-      <p class="sub" style="margin:0 0 10px">동기화할 때마다 여섯 가지를 자동으로 검사합니다 (예시 앱 <span class="mono">lib/checks.mjs</span>)</p>
+      <p class="sub" style="margin:0 0 10px">동기화할 때마다 여섯 가지를 자동으로 검사합니다 (예시 앱 기준)</p>
       <ul class="dash-list" style="font-size:21px">
         <li>머리글(열 이름)에 빈 칸이 없는가?</li>
         <li>읽은 행이 0개가 아닌가?</li>
@@ -3132,36 +3055,36 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>1단계: 탭 다섯 개를 만들고 ‘전체 목록’에 표를 넣습니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>1단계: 탭 다섯 개를 만들고 ‘전체 목록’에 표를 넣습니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="pbox" data-app="Claude Code">
-        <p>“화면 맨 위에 내비 한 줄을 붙여 주세요. 왼쪽에 동기화 고르기와 가격표 · 이전과 비교 · 전체 목록 · 동기화 기록 · 알림 다섯 탭,</p>
-        <p>가운데에 앱 이름을 둡니다. 그 아래에 검사 줄 한 줄: ‘(OK) [행 수]건을 읽었습니다 · 마지막 동기화 시각 · 파일 이름’.</p>
-        <p>먼저 ‘전체 목록’ 탭에 DB의 최신 데이터를 가는 선 표로 보여 주세요. 열은 제품명 · 카테고리 · 가격 · 통화 · 특징 · 제품URL · 확인일,</p>
-        <p>가격 순 정렬과 제품명 검색을 넣고, 표 위에 전체 행 수를 적은 뒤 열어 볼 주소를 알려 주세요.”</p>
+        <p>“화면 맨 위에 헤더를 만들어 주세요. 가운데에 앱 이름을 두고, 왼쪽에는 동기화 날짜를 고르는 칸과 ‘가격표 · 이전과 비교 · 전체 목록 · 동기화 기록 · 알림’ 다섯 개 탭을 넣어 주세요.</p>
+        <p>헤더 바로 아래에는 상태를 알려 주는 한 줄을 넣어 주세요. 예: ‘(OK) 30건을 읽었습니다 · 마지막 동기화 시각 · 파일 이름’.</p>
+        <p>먼저 ‘전체 목록’ 탭에 지금 저장된 데이터를 깔끔한 표로 보여 주세요. 열은 제품명 · 카테고리 · 가격 · 통화 · 특징 · 제품URL · 확인일로 하고,</p>
+        <p>가격순 정렬과 제품명 검색을 넣고, 표 위에 전체 개수를 적어 주세요. 다 되면 열어 볼 주소를 알려 주세요.”</p>
       </div>
-      <div class="note">완료 기준: 표 행 수 = 엑셀 행 수 · 검사 줄의 건수도 같음</div>
+      <div class="note">완료 기준: 표 행 수 = 엑셀 행 수 · 상태 줄의 건수도 같음</div>
       <div class="note">모양은 말로 고칩니다. “금액 큰 순이 먼저”, “표 글씨를 크게”처럼 바로 요청합니다</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 표 화면을 만들고 내 PC에서 엽니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 표 화면을 만들고 내 PC에서 엽니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="shots">
-        <div class="figure" style="flex:0 1 auto; min-width:0"><div class="shot" style="display:inline-block"><img src="images/c8-board-list.png" alt="전체 목록 탭: 위에 내비와 탭 다섯 개, (OK) 30건을 읽었습니다 검사 줄, 전체 30행, 제품명 검색, 가격 낮은 순 정렬" style="max-height:400px; width:auto; max-width:100%"></div><p class="shot-cap">Claude Code가 알려 준 주소를 열고 ‘전체 목록’ 탭: 검사 줄 30건 · 전체 30행 · 검색 · 가격 정렬</p></div>
+        <div class="figure" style="flex:0 1 auto; min-width:0"><div class="shot" style="display:inline-block"><img src="images/c8-board-list.png" alt="전체 목록 탭: 위에 헤더와 탭 다섯 개, (OK) 30건을 읽었습니다 상태 줄, 전체 30행, 제품명 검색, 가격 낮은 순 정렬" style="max-height:400px; width:auto; max-width:100%"></div><p class="shot-cap">Claude Code가 알려 준 주소를 열고 ‘전체 목록’ 탭: 상태 줄 30건 · 전체 30행 · 검색 · 가격 정렬</p></div>
       </div>
       <div class="note">답에서 확인할 것은 화면 주소 하나입니다. 열어서 행 수가 엑셀과 같은지 봅니다 (캡처는 3단계 디자인까지 입힌 예시 앱)</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>2단계: 한눈에 요약 · 큰 숫자 칸 · 알림 · 제품 상세를 채웁니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>2단계: 한눈에 요약 · 큰 숫자 칸 · 알림 · 제품 상세를 채웁니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="pbox" data-app="Claude Code">
         <p>“‘가격표’ 탭 맨 위에 한눈에 요약 띠를 넣어 주세요: 제품 수 · 평균가 · 최저가 · 최고가 칸과 지난번과 비교 건수 · 확인할 알림 건수.</p>
         <p>그 아래에 [내 핵심 지표 2–3개]를 큰 숫자 칸으로 보여 주고, 칸을 누르면 그 항목만 걸러 주세요.</p>
-        <p>검사에서 실패했으면 검사 줄을 (!)로 바꾸고 이유를 보여 주세요. 하루 넘게 지났으면 ‘오래된 데이터’로 표시해 주세요.</p>
+        <p>검사에서 실패했으면 헤더 아래 상태 줄을 (!)로 바꾸고 이유를 보여 주세요. 하루 넘게 지났으면 ‘오래된 데이터’로 표시해 주세요.</p>
         <p>‘알림’ 탭에는 가격이 빈 제품 → 가격이 10% 이상 오르내린 제품 → 삭제 → 신규 순으로 모아 주세요.</p>
         <p>제품명을 누르면 제품 상세를 열어 동기화마다의 가격 추이를 선그래프로 보여 주세요.”</p>
       </div>
@@ -3170,29 +3093,30 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 요약 띠 · 검사 줄 · 큰 숫자 칸을 올립니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 요약 띠 · 상태 줄 · 큰 숫자 칸을 올립니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="shots">
-        <div class="figure" style="flex:0 1 auto; min-width:0"><div class="shot" style="display:inline-block"><img src="images/c8-board-cards-before.png" alt="(OK) 30건을 읽었습니다 검사 줄과 가격표 탭의 큰 숫자 칸: 제품 수 30, 남성 신발 평균 265,500, 헤드웨어 79,000, 자켓 404,000" style="max-height:400px; width:auto; max-width:100%"></div><p class="shot-cap">새로고침하면 위에 검사 줄, ‘가격표’ 탭에 제품 수와 카테고리별 평균이 큰 숫자로</p></div>
+        <div class="figure" style="flex:0 1 auto; min-width:0"><div class="shot" style="display:inline-block"><img src="images/c8-board-cards-before.png" alt="(OK) 30건을 읽었습니다 상태 줄과 가격표 탭의 큰 숫자 칸: 제품 수 30, 남성 신발 평균 265,500, 헤드웨어 79,000, 자켓 404,000" style="max-height:400px; width:auto; max-width:100%"></div><p class="shot-cap">새로고침하면 위에 상태 줄, ‘가격표’ 탭에 제품 수와 카테고리별 평균이 큰 숫자로</p></div>
       </div>
       <div class="note">캡처는 3단계 디자인까지 입힌 예시 앱이라, 지금 단계 화면은 더 기본적인 모양입니다. 숫자 칸을 누르면 그 카테고리만 남는지 확인합니다. 검사 실패와 ‘오래된 데이터’ 표시는 갱신 시험(성공 · 실패) 때 봅니다</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>3단계: 마음에 드는 디자인을 DESIGN.md로 입힙니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>3단계: 마음에 드는 디자인을 DESIGN.md로 입힙니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="split">
         <div class="split-main">
           <p class="lead"><b>DESIGN.md</b>는 색 · 글꼴 · 간격 · 버튼 모양을 적어 둔 디자인 설명서입니다. 디자인을 몰라도 “이 느낌으로”를 AI에게 정확히 전할 수 있습니다.</p>
           <ol class="steps">
-            <li><b>getdesign.md</b>에서 마음에 드는 디자인을 고릅니다 (예시 앱은 Vercel — 흑백 · 깔끔한 표)</li>
-            <li><b>Download DESIGN.md</b>를 눌러 받은 파일을 앱 폴더에 넣습니다</li>
-            <li>Claude Code에 오른쪽처럼 요청합니다</li>
+            <li><a href="https://getdesign.md/" target="_blank" rel="noopener" style="color:var(--navy); font-weight:800">getdesign.md ↗</a>에서 마음에 드는 디자인을 고릅니다 (예시 앱은 Vercel — 흑백 · 깔끔한 표)</li>
+            <li>디자인 페이지의 <b>설치 명령어</b>를 복사해 Claude Code에 붙여 넣고 “<b>이 명령 실행해 줘</b>”라고 합니다 <span style="color:var(--ink-soft); font-size:16px">(또는 Download DESIGN.md로 받아 앱 폴더에 넣기)</span></li>
+            <li>DESIGN.md가 들어오면 Claude Code에 오른쪽 아래처럼 요청합니다</li>
           </ol>
         </div>
         <div class="split-side" style="flex-basis:460px">
-          <div class="pbox" data-app="Claude Code">
+          <div class="pbox pbox--tight" data-app="Claude Code · ② 디자인 받기 (예: Vercel)"><p>npx getdesign@latest add vercel</p><p>이 명령 실행해 줘</p></div>
+          <div class="pbox" data-app="Claude Code · ③ 디자인 입히기" style="margin-top:22px">
             <p>“이 폴더의 DESIGN.md를 디자인 기준으로 삼아 대시보드 화면을 다시 꾸며 주세요.</p>
             <p>데이터 · 탭 · 검색 · 정렬은 그대로 두세요.</p>
             <p>‘가격표’ 탭에 카테고리별 가격 범위 막대를 넣어 주세요. DESIGN.md에 없는 색 · 크기는 새로 만들지 말고, 정해지지 않은 건 나에게 물어봐 주세요.”</p>
@@ -3204,7 +3128,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 같은 데이터, 달라진 화면</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 같은 데이터, 달라진 화면</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="shots" style="align-items:center">
         <div class="figure" style="flex:0 0 36%; min-width:0"><div class="shot"><img src="images/c7-next-cards-before.png" alt="디자인을 입히기 전: 기본 모양의 흰 카드와 탭" style="width:100%"></div><p class="shot-cap">① 전: 기본 모양 그대로인 흰 카드</p></div>
@@ -3216,18 +3140,18 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 성공: 엑셀 값을 고치고 동기화합니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 성공: 엑셀 값을 고치고 동기화합니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
-      <p class="step-mid" style="margin-top:0">② ①과 ③ 사이에 한 일: 작업 폴더의 엑셀에서 가격 하나를 고치고 Claude Code에 “npm run sync만 한 번 실행해 주세요” → 통과 · 변경 1</p>
+      <p class="step-mid" style="margin-top:0">② ①과 ③ 사이에 한 일: 작업 폴더의 엑셀에서 가격 하나를 고치고 Claude Code에 “동기화해 줘” → 통과 · 변경 1</p>
       <div class="shots" style="align-items:flex-start">
-        <div class="figure" style="flex:1 1 0; min-width:0"><div class="shot"><img src="images/c8-board-cards-before.png" alt="동기화 전: (OK) 검사 줄, 남성 신발 평균 265,500" style="width:100%"></div><p class="shot-cap" style="margin-top:4px">① 전: 신발 평균 265,500 · 검사 줄 (OK)</p></div>
-        <div class="figure" style="flex:1 1 0; min-width:0"><div class="shot"><img src="images/c8-board-cards-success.png" alt="동기화 후: (OK) 검사 줄의 시각과 버전이 바뀌고 남성 신발 평균 263,400" style="width:100%"></div><p class="shot-cap" style="margin-top:4px">③ 후: 새로고침 → 신발 평균 263,400 · 검사 줄의 시각이 바뀜</p></div>
+        <div class="figure" style="flex:1 1 0; min-width:0"><div class="shot"><img src="images/c8-board-cards-before.png" alt="동기화 전: (OK) 상태 줄, 남성 신발 평균 265,500" style="width:100%"></div><p class="shot-cap" style="margin-top:4px">① 전: 신발 평균 265,500 · 상태 줄 (OK)</p></div>
+        <div class="figure" style="flex:1 1 0; min-width:0"><div class="shot"><img src="images/c8-board-cards-success.png" alt="동기화 후: (OK) 상태 줄의 시각과 버전이 바뀌고 남성 신발 평균 263,400" style="width:100%"></div><p class="shot-cap" style="margin-top:4px">③ 후: 새로고침 → 신발 평균 263,400 · 상태 줄의 시각이 바뀜</p></div>
       </div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>이전 자료와 비교하는 탭을 채웁니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>이전 자료와 비교하는 탭을 채웁니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="split" style="align-items:center">
         <div class="split-main">
@@ -3245,16 +3169,16 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 실패와 복구도 확인합니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 실패와 복구도 확인합니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
-      <p class="step-mid" style="margin-top:0">④ 첫 열(제품명) 하나를 비우고 “npm run sync만 한 번 실행해 주세요” → 검사 실패, DB는 그대로</p>
-      <div class="figure" style="margin:0 auto 10px; max-width:420px"><div class="shot"><img src="images/c8-board-cards-fail.png" alt="검사 줄 (!) 펼침: 가장 최근 동기화는 검사 실패, 첫 열(제품명)이 빈 행 1개. 신발 평균은 263,400 그대로"></div><p class="shot-cap" style="margin-top:4px">⑤ 검사 줄이 (!)로 바뀌고, 누르면 실패 이유가 보입니다. 숫자와 표는 이전 데이터 그대로</p></div>
+      <p class="step-mid" style="margin-top:0">④ 첫 열(제품명) 하나를 비우고 “동기화해 줘” → 검사 실패, DB는 그대로</p>
+      <div class="figure" style="margin:0 auto 10px; max-width:420px"><div class="shot"><img src="images/c8-board-cards-fail.png" alt="상태 줄 (!) 펼침: 가장 최근 동기화는 검사 실패, 첫 열(제품명)이 빈 행 1개. 신발 평균은 263,400 그대로"></div><p class="shot-cap" style="margin-top:4px">⑤ 상태 줄이 (!)로 바뀌고, 누르면 실패 이유가 보입니다. 숫자와 표는 이전 데이터 그대로</p></div>
       <div class="figure" style="margin:0 auto 10px; max-width:680px"><div class="shot"><img src="images/c8-board-history.png" alt="동기화 기록 탭: 최근 4건, 통과 3 실패 1, OK FAIL OK 첫 저장"></div><p class="shot-cap" style="margin-top:4px">⑥ 엑셀을 되돌리고 다시 동기화 → ‘동기화 기록’ 탭에 OK · FAIL · OK</p></div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>조사부터 대시보드까지 자동으로, 사람은 확인만</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>조사부터 대시보드까지 자동으로, 사람은 확인만</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="flow">
         <div class="flow-step is-now"><p class="flow-name">Claude Code 루틴<br>(정해진 시간)</p></div>
@@ -3273,32 +3197,57 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>Claude Code 루틴으로 조사 → 작업 폴더 엑셀 → DB를 예약합니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>Claude Code 루틴: 정해 둔 시간에 Claude가 알아서 일합니다</h2><span class="head-tag">실습 ② · 루틴</span></div>
+    <div class="slide-body">
+      <div class="split" style="align-items:flex-start; gap:34px">
+        <div class="split-side" style="flex:0 0 300px">
+          <div class="shot" style="text-align:center"><img style="max-height:410px; width:auto; max-width:100%; display:inline-block" src="images/c-routines-templates.png" alt="Claude 데스크톱 앱 Code 탭의 루틴 화면: 새 루틴 버튼과 Briefing, Email triage, System health check, Issue triage, PR review digest, Dependency update check, Release notes drafter, Flaky test tracker 템플릿"></div>
+          <p class="shot-cap">Claude 데스크톱 › Code 탭 › 루틴 › 새 루틴</p>
+        </div>
+        <div class="split-main">
+          <p class="lead" style="margin:0 0 10px">할 일(요청문)과 시간표를 저장해 두면, 그 시간에 Claude가 새 세션을 열어 실행합니다</p>
+          <ul class="dash-list" style="font-size:18px; margin:0 0 14px">
+            <li><b>Briefing</b> · 오늘 일정 · 메일 · 메시지를 요약</li>
+            <li><b>Email triage</b> · 받은편지함을 분류하고 우선순위를 매겨, 급한 메일엔 답장 초안까지</li>
+            <li>이런 일에도: 매주 월요일 주간 보고서 초안 · 특정 날짜에 한 번 메일 초안 만들어 두기</li>
+          </ul>
+          <table class="agenda agenda--sm">
+            <thead><tr><th></th><th>로컬 (내 PC)</th><th>클라우드</th></tr></thead>
+            <tbody>
+              <tr><td class="m">PC가 꺼져 있으면</td><td>실행 안 됨 (앱이 켜져 있고 깨어 있을 때만)</td><td>실행됨</td></tr>
+              <tr><td class="m">내 파일 · 내 크롬</td><td><b>쓸 수 있음</b></td><td>못 씀 (GitHub 저장소 · 커넥터만)</td></tr>
+              <tr><td class="m">승인</td><td>처음 ‘지금 실행’ 때 허용해 두기</td><td>묻지 않고 실행</td></tr>
+              <tr><td class="m">가장 짧은 간격</td><td>1분</td><td>1시간</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="note" style="margin-top:12px">고르는 기준: 내 PC의 파일 · 크롬이 필요하면 <b>로컬</b>, PC를 끈 뒤에도 돌아야 하고 커넥터만으로 되는 일이면 <b>클라우드</b> · 오늘은 작업 폴더의 엑셀과 확장프로그램을 쓰므로 <b>로컬</b></div>
+      <p class="sub" style="margin-top:6px; font-size:15px">출처: <a style="color:var(--navy)" href="https://code.claude.com/docs/en/desktop-scheduled-tasks">Desktop scheduled tasks</a> · <a style="color:var(--navy)" href="https://code.claude.com/docs/en/routines">Routines</a> (Claude Code 공식 문서) · Briefing · Email triage는 Gmail · 캘린더 같은 커넥터가 필요합니다</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-head"><h2>Claude Code 루틴으로 조사 → 작업 폴더 엑셀 → DB를 예약합니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="split">
         <div class="split-main">
           <div class="pbox" data-app="루틴에 넣을 요청문">
             <p>“작업 폴더의 제품조사_살로몬.xlsx의 제품URL을 Claude 확장프로그램으로 하나씩 열어 제품명과 가격을 다시 확인하고,</p>
-            <p>카테고리·특징은 그대로 둔 채 엑셀을 덮어쓴 뒤 이 폴더에서 npm run sync를 실행해 결과를 세 줄로 알려 줘.</p>
+            <p>카테고리·특징은 그대로 둔 채 엑셀을 덮어쓴 뒤 동기화하고, 결과를 세 줄로 알려 줘.</p>
             <p>제품 페이지를 하나도 못 읽으면 엑셀을 덮어쓰지 말고 실패로 끝내.”</p>
           </div>
           <div class="pbox" data-app="Claude 데스크톱" style="margin-top:14px">
             <p>“평일 09:00에 이 폴더에서 위 요청문을 실행하는 루틴을 만들어 주세요.”</p>
           </div>
         </div>
-        <div class="split-side" style="flex-basis:330px">
-          <table class="agenda agenda--sm">
-            <thead><tr><th>표기</th><th>뜻</th></tr></thead>
-            <tbody><tr><td><b>0 9 * * 1-5</b></td><td>평일 09:00</td></tr></tbody>
-          </table>
-        </div>
       </div>
-      <div class="note note--warn">루틴은 내 PC의 Claude 데스크톱 앱이 실행합니다. PC · Chrome(확장프로그램 연결) · Claude 데스크톱이 켜져 있어야 합니다. 처음 ‘지금 실행’으로 한 번 돌려 확장프로그램까지 도는지 보고, 그때 나오는 권한 요청을 승인합니다</div>
+      <div class="note note--warn"><b>로컬 루틴</b>이라 내 PC의 Claude 데스크톱 앱이 실행합니다. PC · Chrome(확장프로그램 연결) · Claude 데스크톱이 켜져 있어야 합니다. 처음 ‘지금 실행’으로 한 번 돌려 확장프로그램까지 도는지 보고, 그때 나오는 권한 요청을 승인합니다</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 루틴을 지금 실행하고 결과를 봅니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>따라하기 · 루틴을 지금 실행하고 결과를 봅니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="split" style="align-items:center">
         <div class="split-main">
@@ -3317,7 +3266,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>확인하는 법 · 알림부터 보고, 제품을 열어 추이를 봅니다</h2><span class="head-tag">실습 ③</span></div>
+    <div class="slide-head"><h2>확인하는 법 · 알림부터 보고, 제품을 열어 추이를 봅니다</h2><span class="head-tag">실습 ②</span></div>
     <div class="slide-body">
       <div class="shots" style="align-items:flex-start">
         <div class="figure" style="flex:1 1 0; min-width:0"><div class="shot"><img src="images/c8-board-alerts.png" alt="알림 탭: 확인할 알림 1건, 가격 급변, 링크 6 패널 코듀로이 캡 (쿨 차콜) 72,000에서 80,000, 변동률 +11.1%" style="width:100%"></div><p class="shot-cap" style="margin-top:4px">① ‘알림 (1)’ 탭: 가격이 10% 넘게 오른 캡 하나 · 누르면 제품 상세</p></div>
@@ -3327,17 +3276,17 @@ body { background: var(--bg); }
     </div>
   </section>
 
-  <section class="slide slide--chapter" data-chapter="실습 ④ 배포·공유">
+  <section class="slide slide--chapter" data-chapter="실습 ③ 배포·공유">
     <div class="chapter">
       <p class="ch-eyebrow">CHAPTER 5</p>
-      <h2 class="ch-title">실습 ④ 배포·공유</h2>
+      <h2 class="ch-title">실습 ③ 배포·공유</h2>
       <div class="ch-rule"></div>
       <ul class="ch-keys"><li>올릴 준비</li><li>보안 점검</li><li>GitHub · AxHub 연결 · 첫 배포</li><li>화면에서 엑셀 올리기</li><li>공유 확인</li></ul>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>동작을 확인한 앱을 올릴 준비를 합니다</h2><span class="head-tag">실습 ④ · 준비</span></div>
+    <div class="slide-head"><h2>동작을 확인한 앱을 올릴 준비를 합니다</h2><span class="head-tag">실습 ③ · 준비</span></div>
     <div class="slide-body">
       <table class="agenda agenda--sm">
         <thead><tr><th>항목</th><th>확인 방법</th></tr></thead>
@@ -3354,7 +3303,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>따라하기 · 배포 전에 보안 점검을 요청합니다</h2><span class="head-tag">실습 ④</span></div>
+    <div class="slide-head"><h2>따라하기 · 배포 전에 보안 점검을 요청합니다</h2><span class="head-tag">실습 ③</span></div>
     <div class="slide-body">
       <div class="split" style="align-items:flex-start">
         <div class="split-main">
@@ -3377,12 +3326,12 @@ body { background: var(--bg); }
           <p class="shot-cap">실제 점검에서 나온 예</p>
         </div>
       </div>
-      <div class="note">①은 신한은행 사례(27~29장)에서 본 ‘담 넘기 · 인가’ 문제를 막는 점검입니다. ‘배포 전에 고치길 권함’으로 나온 항목은 “1~3번 고쳐 주세요”라고 요청한 뒤 배포합니다</div>
+      <div class="note">①은 신한은행 사례(22~23장)에서 본 ‘허술한 관계자 문 · 인가’ 문제를 막는 점검입니다. ‘배포 전에 고치길 권함’으로 나온 항목은 “1~3번 고쳐 주세요”라고 요청한 뒤 배포합니다</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>Claude Code에 배포를 요청합니다</h2><span class="head-tag">실습 ④</span></div>
+    <div class="slide-head"><h2>Claude Code에 배포를 요청합니다</h2><span class="head-tag">실습 ③</span></div>
     <div class="slide-body">
       <div class="split">
         <div class="split-main">
@@ -3399,7 +3348,7 @@ body { background: var(--bg); }
           </ol>
         </div>
         <div class="split-side">
-          <table class="agenda agenda--sm"><thead><tr><th>미리보기 항목</th><th>예</th></tr></thead><tbody><tr><td>앱 이름</td><td>price-dashboard-hjlee (사람마다 다르게)</td></tr><tr><td>작업공간</td><td>jocodingax</td></tr><tr><td>저장소</td><td>[내 계정]/[저장소] (GitHub · 비공개)</td></tr><tr><td>환경</td><td>운영 (공개 범위: 비공개)</td></tr><tr><td>주소</td><td>https://price-dashboard-hjlee…axhub.ai</td></tr><tr><td>DB</td><td>Postgres (AxHub가 붙여 줌)</td></tr></tbody></table><p class="shot-cap">배포 미리보기 · 확인하기 전에는 배포하지 않습니다</p>
+          <table class="agenda agenda--sm"><thead><tr><th>미리보기 항목</th><th>예</th></tr></thead><tbody><tr><td>앱 이름</td><td>price-dashboard-hjlee (사람마다 다르게)</td></tr><tr><td>작업공간</td><td>jocodingax</td></tr><tr><td>저장소</td><td>[내 계정]/[저장소] (GitHub · 비공개)</td></tr><tr><td>환경</td><td>운영 (공개 범위: 비공개)</td></tr><tr><td>주소</td><td>https://price-dashboard-hjlee…axhub.ai</td></tr><tr><td>DB</td><td>AxHub DB (AxHub가 붙여 줌)</td></tr></tbody></table><p class="shot-cap">배포 미리보기 · 확인하기 전에는 배포하지 않습니다</p>
         </div>
       </div>
       <div class="note">처음 한 번은 GitHub 비공개 저장소 만들기 · 연결 · 첫 배포를 함께 합니다. 그다음부터는 코드를 고쳐 GitHub에 push하면 자동으로 다시 배포됩니다</div>
@@ -3407,7 +3356,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>배포가 실패하면 원인부터 묻습니다</h2><span class="head-tag">실습 ④</span></div>
+    <div class="slide-head"><h2>배포가 실패하면 원인부터 묻습니다</h2><span class="head-tag">실습 ③</span></div>
     <div class="slide-body">
       <div class="pbox" data-app="Claude Code">
         <p>“방금 AxHub 배포가 왜 실패했는지 원인만 확인해 주세요.</p>
@@ -3418,7 +3367,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>배포 대시보드에는 엑셀을 화면에서 올립니다</h2><span class="head-tag">실습 ④</span></div>
+    <div class="slide-head"><h2>배포 대시보드에는 엑셀을 화면에서 올립니다</h2><span class="head-tag">실습 ③</span></div>
     <div class="slide-body">
       <div class="flow">
         <div class="flow-step"><p class="flow-name">배포 주소 열기<br>(AxHub 로그인)</p></div>
@@ -3429,14 +3378,14 @@ body { background: var(--bg); }
         <div class="flow-arrow">→</div>
         <div class="flow-step"><p class="flow-name">검사 통과 시<br>AxHub DB</p></div>
       </div>
-      <div class="note" style="margin-top:26px"><span class="mono">npm run sync</span>는 내 PC 대시보드로만 보냅니다. 배포 주소는 로그인 뒤에 있어 명령으로 보내지 못하고, 화면의 <b>「다른 파일 올리기 → 미리 보고 저장」</b>으로 올립니다</div>
+      <div class="note" style="margin-top:26px">내 PC에서 쓰던 동기화는 내 PC 대시보드로만 보냅니다. 배포 주소는 로그인 뒤에 있어 명령으로 보내지 못하고, 화면의 <b>「다른 파일 올리기 → 미리 보고 저장」</b>으로 올립니다</div>
       <div class="note">Claude 확장프로그램은 파일 업로드(최대 10MB)도 할 수 있어, 이 버튼을 대신 눌러 달라고 맡길 수도 있습니다 (선택)</div>
       <div class="note note--warn">첫 저장 때 AxHub DB는 비어 있어 ‘첫 저장’으로 기록됩니다. 연습용 DB의 기록은 옮겨지지 않습니다. 매일 자동으로 배포 DB까지 올리려면 부록(Aside · SharePoint)을 봅니다</div>
     </div>
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>배포한 대시보드는 다시 배포하지 않아도 갱신됩니다</h2><span class="head-tag">실습 ④</span></div>
+    <div class="slide-head"><h2>배포한 대시보드는 다시 배포하지 않아도 갱신됩니다</h2><span class="head-tag">실습 ③</span></div>
     <div class="slide-body">
       <div class="flow">
         <div class="flow-step"><p class="flow-name">엑셀 수정<br>(사람 · 루틴)</p></div>
@@ -3453,7 +3402,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>팀원에게 보이기 전 권한과 데이터를 확인합니다</h2><span class="head-tag">실습 ④</span></div>
+    <div class="slide-head"><h2>팀원에게 보이기 전 권한과 데이터를 확인합니다</h2><span class="head-tag">실습 ③</span></div>
     <div class="slide-body">
       <ul class="dash-list" style="font-size:24px">
         <li>배포 주소가 실제로 열리는가? (비공개 앱은 AxHub 로그인 후 보입니다)</li>
@@ -3534,7 +3483,7 @@ body { background: var(--bg); }
   <section class="slide" data-chapter="1회차 정리">
     <div class="slide-head"><h2>조사부터 배포까지 한 흐름으로 확인했습니다</h2><span class="head-tag">정리</span></div>
     <div class="slide-body">
-      <p class="lead">보안 원칙(공개 페이지 · 작업 폴더만) → Claude 확장프로그램 조사 → 작업 폴더에 엑셀 → 작업 폴더에 Next.js 앱(내 PC) → <span class="mono">npm run sync</span>: 자동 검사 → DB → 대시보드(한눈에 요약 · 알림 · 제품 상세) → Claude Code 루틴(평일 09:00): 가격 재확인 → 엑셀 덮어쓰기 → 동기화 → 보안 점검 → GitHub · AxHub 배포(push하면 자동 재배포) · 배포 대시보드는 화면에서 엑셀 올리기</p>
+      <p class="lead">보안 원칙(공개 페이지 · 작업 폴더만) → Claude 확장프로그램 조사 → 작업 폴더에 엑셀 → 작업 폴더에 Next.js 앱(내 PC) → 동기화: 자동 검사 → DB → 대시보드(한눈에 요약 · 알림 · 제품 상세) → Claude Code 루틴(평일 09:00): 가격 재확인 → 엑셀 덮어쓰기 → 동기화 → 보안 점검 → GitHub · AxHub 배포(push하면 자동 재배포) · 배포 대시보드는 화면에서 엑셀 올리기</p>
       <div class="note" style="margin:0 0 12px">부록: 오늘 만든 것을 내 업무로 넓히는 방법, 그리고 Aside · Claude 확장프로그램으로 회사 시스템 로그인이 필요한 조사 · 팀이 함께 쓰는 원본 파일(SharePoint) · 브라우저 안 예약까지</div>
       <p class="sub" style="margin-bottom:10px">출처: 제공된 「아머스포츠 AI 활용 심화과정 커리큘럼 (사전설문 반영안)」</p>
       <ul class="dash-list" style="margin:0">
@@ -3762,7 +3711,7 @@ body { background: var(--bg); }
       <p class="ch-desc">회사 시스템 로그인이 필요한 조사 · 팀이 함께 쓰는 원본 파일(SharePoint) · 브라우저 안 예약(Aside Routine)까지 가능합니다</p>
       <p class="ch-desc" style="font-size:22px; margin-top:10px; font-weight:700">Aside가 없어도 됩니다 — 같은 일을 1회차의 <b>Claude Code + Claude 확장프로그램</b>으로도 할 수 있습니다</p>
       <p class="ch-desc" style="font-size:20px; margin-top:10px">예시 앱에는 <span class="mono">npm run sync:sharepoint</span> · <span class="mono">npm run refresh:sharepoint</span>로 남아 있습니다 · 로그인한 Aside 탭으로 배포 대시보드(AxHub DB)까지 바로 보냅니다</p>
-      <ul class="ch-keys"><li>Ask Aside 조사</li><li>SharePoint에 올리기</li><li>실습 ② Aside 루틴 체험</li><li>채팅에서 Aside</li><li>M365 커넥터</li><li>PC 없이 돌리기</li></ul>
+      <ul class="ch-keys"><li>Ask Aside 조사</li><li>SharePoint에 올리기</li><li>부록 실습 Aside 루틴 체험</li><li>채팅에서 Aside</li><li>M365 커넥터</li><li>PC 없이 돌리기</li></ul>
     </div>
   </section>
 
@@ -3948,6 +3897,11 @@ body { background: var(--bg); }
       </div>
       <div class="note">Claude Code에서 <span class="mono">aside</span> CLI로 쓰면 이 화면까지 갈 필요가 없습니다</div>
     </div>
+  </section>
+
+  <section class="slide ref-wrap">
+    <h2 style="display:none">참고: Claude 앱에서 Gmail · 구글 캘린더를 연결하는 방법</h2>
+    <iframe src="ref-theory.html?v=4#17" title="참고: Claude 앱에서 Gmail · 구글 캘린더를 연결하는 방법" loading="lazy" tabindex="-1" style="position:absolute; left:0; top:0; width:1280px; height:720px; border:0; pointer-events:none; background:#fff"></iframe>
   </section>
 
   <section class="slide">
@@ -5552,7 +5506,7 @@ body { background: var(--bg); }
   document.querySelectorAll('.slide[data-steps]').forEach(function (s) { mo.observe(s, { attributes: true, attributeFilter: ['class'] }); });
   /* 참고 교안을 끼운 장은 단계를 iframe 주소(#번호.단계)로 넘긴다 */
   document.querySelectorAll('.ref-wrap[data-steps]').forEach(function (s) {
-    var f = s.querySelector('iframe'), base = f.getAttribute('src').split('.')[0] + '.html#' + f.getAttribute('src').split('#')[1].split('.')[0];
+    var f = s.querySelector('iframe'), base = f.getAttribute('src').split('#')[0] + '#' + f.getAttribute('src').split('#')[1].split('.')[0];
     new MutationObserver(function () {
       var st = +(s.getAttribute('data-stage') || 0);
       f.setAttribute('src', base + (st ? '.' + st : ''));
