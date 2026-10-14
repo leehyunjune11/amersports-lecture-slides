@@ -780,6 +780,8 @@ html, body {
   font-weight: 700;
 }
 .steps small { display: block; margin-top: 4px; font-size: 19px; color: var(--ink-soft); }
+.steps--cols { columns: 2; column-gap: 48px; }   /* 긴 흐름을 두 단으로 */
+.steps--cols > li { break-inside: avoid; margin-bottom: 14px; }
 
 /* ---------- 본문 2단 (절차 | 옆 상자) ------------------------------------- */
 
@@ -2718,7 +2720,7 @@ body { background: var(--bg); }
       <div class="split" style="align-items:center">
         <div class="split-main">
           <ol class="steps">
-            <li><b>Chrome 웹 스토어</b>에서 Claude 확장프로그램(Claude in Chrome)을 설치하고, 퍼즐 아이콘에서 고정합니다</li>
+            <li><a href="https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn" target="_blank" rel="noopener" style="color:var(--navy); font-weight:800">Chrome 웹 스토어 ↗</a>에서 Claude 확장프로그램(Claude in Chrome)을 설치하고, 퍼즐 아이콘에서 고정합니다</li>
             <li>확장프로그램에서 Claude 계정으로 로그인합니다 (Pro · Max · Team · Enterprise 요금제, Free는 안 됨)</li>
             <li><b>Claude 데스크톱 앱</b> 설정의 <b>Chrome용 Claude</b>에서 Claude in Chrome 사용 설정을 켭니다</li>
             <li>Claude에게 아래 문장을 보내 연결을 확인합니다</li>
@@ -3293,7 +3295,7 @@ body { background: var(--bg); }
         <tbody>
           <tr><td class="m">GitHub 계정</td><td>내 계정으로 github.com에 로그인됩니다. 배포할 앱 코드는 내 계정의 <b>비공개 저장소</b>에 둡니다</td></tr>
           <tr><td class="m">Claude Code axhub 플러그인</td><td>Claude Code의 <span class="mono">/plugin</span> 목록에 axhub가 보입니다</td></tr>
-          <tr><td class="m">axhub CLI 설치 · 로그인</td><td>Mac: <span class="mono">curl -fsSL https://cli.axhub.ai/install.sh | sh</span> · Windows: <span class="mono">irm https://cli.axhub.ai/install.ps1 | iex</span> → <span class="mono">axhub auth login</span></td></tr>
+          <tr><td class="m">axhub CLI 설치 · 로그인</td><td>1. 설치<br>&nbsp;&nbsp;&nbsp;Mac: <span class="mono">curl -fsSL https://cli.axhub.ai/install.sh | sh</span><br>&nbsp;&nbsp;&nbsp;Windows: <span class="mono">irm https://cli.axhub.ai/install.ps1 | iex</span><br>2. 로그인: <span class="mono">axhub auth login</span></td></tr>
           <tr><td class="m">AxHub에 GitHub 연동</td><td>Claude Code에 “AxHub에 내 GitHub 계정 연결해 줘” → 브라우저에서 승인합니다</td></tr>
         </tbody>
       </table>
@@ -3483,7 +3485,18 @@ body { background: var(--bg); }
   <section class="slide" data-chapter="1회차 정리">
     <div class="slide-head"><h2>조사부터 배포까지 한 흐름으로 확인했습니다</h2><span class="head-tag">정리</span></div>
     <div class="slide-body">
-      <p class="lead">보안 원칙(공개 페이지 · 작업 폴더만) → Claude 확장프로그램 조사 → 작업 폴더에 엑셀 → 작업 폴더에 Next.js 앱(내 PC) → 동기화: 자동 검사 → DB → 대시보드(한눈에 요약 · 알림 · 제품 상세) → Claude Code 루틴(평일 09:00): 가격 재확인 → 엑셀 덮어쓰기 → 동기화 → 보안 점검 → GitHub · AxHub 배포(push하면 자동 재배포) · 배포 대시보드는 화면에서 엑셀 올리기</p>
+      <ol class="steps steps--cols" style="margin-bottom:22px">
+        <li>보안 원칙 (공개 페이지 · 작업 폴더만)</li>
+        <li>Claude 확장프로그램으로 조사</li>
+        <li>작업 폴더에 엑셀</li>
+        <li>작업 폴더에 Next.js 앱 (내 PC)</li>
+        <li>동기화: 자동 검사 → DB</li>
+        <li>대시보드 (한눈에 요약 · 알림 · 제품 상세)</li>
+        <li>Claude Code 루틴 (평일 09:00): 가격 재확인 → 엑셀 덮어쓰기 → 동기화</li>
+        <li>보안 점검</li>
+        <li>GitHub · AxHub 배포 (push하면 자동 재배포)</li>
+        <li>배포 대시보드에는 화면에서 엑셀 올리기</li>
+      </ol>
       <div class="note" style="margin:0 0 12px">부록: 오늘 만든 것을 내 업무로 넓히는 방법, 그리고 Aside · Claude 확장프로그램으로 회사 시스템 로그인이 필요한 조사 · 팀이 함께 쓰는 원본 파일(SharePoint) · 브라우저 안 예약까지</div>
       <p class="sub" style="margin-bottom:10px">출처: 제공된 「아머스포츠 AI 활용 심화과정 커리큘럼 (사전설문 반영안)」</p>
       <ul class="dash-list" style="margin:0">
