@@ -4836,7 +4836,7 @@ body { background: var(--bg); }
       <p class="ch-eyebrow">CHAPTER 2</p>
       <h2 class="ch-title">다양한 엔지니어링 기법과<br>하네스 엔지니어링</h2>
       <div class="ch-rule"></div>
-      <ul class="ch-keys"><li>바이브코딩</li><li>프롬프트·컨텍스트·하네스</li><li>왜 팀인가</li><li>핵심 개념 4가지</li></ul>
+      <ul class="ch-keys"><li>바이브코딩</li><li>프롬프트·컨텍스트·하네스</li><li>왜 팀인가</li><li>하네스의 네 요소</li></ul>
     </div>
   </section>
 
@@ -4900,7 +4900,7 @@ body { background: var(--bg); }
         <tbody>
           <tr><td class="m">프롬프트 엔지니어링</td><td>한 번의 요청 문장</td><td>대화 한 번</td><td>CH1의 여섯 요소</td></tr>
           <tr><td class="m">컨텍스트 엔지니어링</td><td>AI가 일할 때 보는 자료·기억 (무엇을 넣고 뺄지)</td><td>첨부 파일 · 폴더 · CLAUDE.md</td><td>관련 엑셀만 폴더에 둠</td></tr>
-          <tr><td class="m">하네스 엔지니어링</td><td>규칙 · 절차 · 역할 · 일정</td><td>.claude 폴더의 파일들</td><td>작성 · 검토 담당 + 매주 실행</td></tr>
+          <tr><td class="m">하네스 엔지니어링</td><td>규칙 · 절차 · 역할 · 검증</td><td>.claude 폴더의 파일들</td><td>작성 · 검토 담당</td></tr>
         </tbody>
       </table>
       <div class="note">셋은 서로 대신하는 관계가 아니라 쌓이는 관계입니다. 하네스 안에서도 좋은 프롬프트가 필요합니다</div>
@@ -4976,7 +4976,7 @@ body { background: var(--bg); }
           <p class="kv-like">AI 모델이 ‘말의 힘’이라면, 하네스는 AI가 우리 업무 방식대로 일하도록 채워 주는 규칙·절차·역할 분담입니다.</p>
         </div>
       </div>
-      <div class="note"><strong class="navy">하네스 엔지니어링 = AI에게 일하는 규칙, 반복 절차, 역할, 실행 시간을 미리 설계해 두는 일</strong></div>
+      <div class="note"><strong class="navy">하네스 엔지니어링 = AI에게 일하는 규칙, 반복 절차, 역할, 검증 방법을 미리 설계해 두는 일</strong></div>
     </div>
   </section>
 
@@ -5089,23 +5089,6 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide">
-    <div class="slide-head"><h2>스케줄링 = 정해진 시간 자동 실행</h2><span class="head-tag">핵심 개념 ④</span></div>
-    <div class="slide-body">
-      <div class="kv kv--2">
-        <div class="kv-item">
-          <p class="kv-name">쉽게 말하면</p>
-          <p class="kv-like">알람처럼 “매주 월요일 9시에 이 일을 해 줘”라고 예약해 두는 기능입니다. Claude Code의 루틴(예약 실행)으로 설정합니다.</p>
-        </div>
-        <div class="kv-item">
-          <p class="kv-name">예시</p>
-          <p class="kv-like">매주 월요일 09:00 → 경쟁 제품 리포트 Skill 실행 → 검토 담당 확인 → 결과 알림</p>
-        </div>
-      </div>
-      <div class="note">규칙·절차·팀원이 갖춰져야 예약 실행 결과도 믿을 수 있습니다</div>
-    </div>
-  </section>
-
-  <section class="slide">
     <div class="slide-head"><h2>네 가지가 모이면 하네스입니다</h2><span class="head-tag">개념 정리</span></div>
     <div class="slide-body">
       <table class="agenda">
@@ -5114,7 +5097,7 @@ body { background: var(--bg); }
           <tr><td class="m">CLAUDE.md</td><td>업무 규칙서</td><td>항상 무엇을 지키나?</td></tr>
           <tr><td class="m">Skill</td><td>업무 매뉴얼</td><td>이 일은 어떤 순서로 하나?</td></tr>
           <tr><td class="m">Subagent</td><td>역할별 팀원</td><td>누가 맡나?</td></tr>
-          <tr><td class="m">스케줄링</td><td>정기 업무 일정</td><td>언제 하나?</td></tr>
+          <tr><td class="m">검증</td><td>검수 기준 · 검토 담당</td><td>결과가 맞는지 어떻게 확인하나?</td></tr>
         </tbody>
       </table>
       <div class="note">이 네 가지를 직접 다 만들 필요는 없습니다. 쉬는 시간 뒤에 하네스 플러그인이 대신 만듭니다</div>
@@ -5125,6 +5108,7 @@ body { background: var(--bg); }
     <div class="slide-head"><h2>AI 에이전트 오케스트레이션: 여러 AI를 지휘합니다</h2><span class="head-tag">엔지니어링 · 오케스트레이션</span></div>
     <div class="slide-body">
       <p class="sub"><strong class="navy">무엇인가</strong> · 여러 AI 에이전트에게 일을 나눠 주고, 순서를 정하고, 결과를 넘기고 모아서 하나의 일을 끝내게 하는 설계입니다. 오케스트라의 지휘자처럼 전체 흐름을 맡습니다.</p>
+      <p class="sub"><strong class="navy">언제 나왔나</strong> · 2023년 여러 AI를 묶어 일하게 하는 도구들과 함께 쓰이기 시작했고, 2024년 12월 Anthropic이 ‘지휘자 + 작업자’ 방식으로 정리했습니다. 하네스 엔지니어링(2026년 2월)보다 먼저 나온 말입니다.</p>
       <table class="agenda agenda--sm">
         <thead><tr><th>방식</th><th>흐름</th><th>예</th></tr></thead>
         <tbody>
@@ -5134,7 +5118,7 @@ body { background: var(--bg); }
           <tr><td class="m">검토 되돌림</td><td>검토 담당이 지적하면 작성 담당이 고쳐 다시 냅니다</td><td>수정은 최대 2번</td></tr>
         </tbody>
       </table>
-      <div class="note">오늘 만드는 하네스도 오케스트레이션입니다. 메인 Claude가 지휘자, 작성 · 검토 담당이 작업자입니다</div>
+      <div class="note">하네스가 퍼지면서 오케스트레이션은 하네스 안의 ‘역할 나누기’ 부분으로 다시 주목받았습니다. 오늘 하네스에서는 메인 Claude가 지휘자, 작성 · 검토 담당이 작업자입니다</div>
     </div>
   </section>
 
@@ -5154,7 +5138,7 @@ body { background: var(--bg); }
   </section>
 
   <section class="slide slide--adv">
-    <div class="slide-head"><h2>심화 · 규칙서를 ‘나용’과 ‘팀용’으로 나눕니다</h2><span class="head-tag">심화 · 한 단계 위</span></div>
+    <div class="slide-head"><h2>심화 · 규칙서를 ‘나’와 ‘팀’으로 나눕니다</h2><span class="head-tag">심화 · 한 단계 위</span></div>
     <div class="slide-body">
       <table class="agenda">
         <thead><tr><th>규칙서를 두는 곳</th><th>담는 내용</th><th>언제 읽나</th></tr></thead>
@@ -5792,7 +5776,7 @@ body { background: var(--bg); }
     <div class="slide-body">
       <table class="agenda">
         <tbody>
-          <tr><td class="m">하네스 엔지니어링</td><td>AI에게 규칙·절차·역할·일정을 설계해 채워 주는 일</td></tr>
+          <tr><td class="m">하네스 엔지니어링</td><td>AI에게 규칙·절차·역할·검증을 설계해 채워 주는 일</td></tr>
           <tr><td class="m">에이전트 / Subagent</td><td>스스로 도구를 써서 일하는 AI / 메인 AI가 일을 나눠 주는 팀원 AI</td></tr>
           <tr><td class="m">CLAUDE.md / Skill</td><td>항상 지키는 업무 규칙서 / 필요할 때 꺼내는 업무 매뉴얼</td></tr>
           <tr><td class="m">플러그인 / 오케스트레이터</td><td>Claude Code 추가 기능 꾸러미 / 팀원 호출 순서를 정하는 진행자</td></tr>
