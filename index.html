@@ -1072,6 +1072,10 @@ html, body {
 .flow--sm .flow-arrow { flex-basis: 26px; font-size: 22px; }
 .flow--sm .flow-name { font-size: 19px; }
 .flow--sm .flow-desc { margin-top: 7px; font-size: 15.5px; line-height: 1.45; }
+.flow-skill { margin: 14px 0 0; padding-top: 12px; border-top: 1px dashed #C3CBD8; font-size: 19px; line-height: 1.5; color: var(--green); font-weight: 700; }
+.flow-skill small { display: block; margin-top: 2px; font-size: 16px; font-weight: 500; color: var(--ink-soft); }
+.flow-step.is-now .flow-skill { color: #8FD19E; }
+.flow-step.is-now .flow-skill small { color: #C9D3E3; }
 
 /* 결과물 제출 순서 — 화면에 빨간 네모 (28p) */
 .sub-row { margin: 0 auto; width: 800px; }
@@ -4387,7 +4391,7 @@ body { background: var(--bg); }
         <thead><tr><th>순서</th><th>주제</th><th>결과</th></tr></thead>
         <tbody>
           <tr><td class="m">1</td><td>프롬프트</td><td>요청을 명확하게 쓰기</td></tr>
-          <tr><td class="m">2</td><td>하네스와 실무 Skill 컬렉션</td><td>환경과 도구 선택 기준</td></tr>
+          <tr><td class="m">2</td><td>엔지니어링과 실무 Skill 컬렉션</td><td>환경과 도구 선택 기준</td></tr>
           <tr><td class="m">3</td><td>준비한 PRD 점검</td><td>질문 반영 · 검토본 저장</td></tr>
           <tr><td class="m">4</td><td>구현 · 검증</td><td>핵심 사용 흐름과 검증 증거</td></tr>
           <tr><td class="m">5</td><td>배포 · 공유</td><td>실제 URL에서 다시 확인</td></tr>
@@ -4612,7 +4616,6 @@ body { background: var(--bg); }
           <p class="sub" style="margin-top:18px">기법은 많고, 일할 때마다 어떤 걸 골라 어떻게 쓸지 떠올리기는 어렵습니다.</p>
         </div>
       </div>
-      <div class="note"><strong class="navy">외우지 않아도 됩니다.</strong> 메타 프롬프팅으로 기법 선택을 요청할 수 있고, 바로 다음 장에서 반복 요청을 Skill로 묶는 예를 봅니다</div>
     </div>
   </section>
   <section class="slide">
@@ -4659,99 +4662,12 @@ body { background: var(--bg); }
       <div class="note">프롬프트는 버리는 것이 아닙니다. 하네스 안의 규칙과 역할도 결국 잘 쓴 프롬프트로 이루어집니다</div>
     </div>
   </section>
-  <section class="slide slide--chapter" data-chapter="하네스 엔지니어링">
+  <section class="slide slide--chapter" data-chapter="엔지니어링">
     <div class="chapter">
       <p class="ch-eyebrow">CHAPTER 2</p>
-      <h2 class="ch-title">하네스 엔지니어링</h2>
+      <h2 class="ch-title">엔지니어링</h2>
       <div class="ch-rule"></div>
-      <ul class="ch-keys"><li>정의</li><li>왜 필요한가</li><li>프롬프트 · 컨텍스트 · 하네스</li><li>네 기둥</li><li>다섯 원칙</li></ul>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>수업의 흐름</h2><span class="head-tag">하네스 · 지도</span></div>
-    <div class="slide-body">
-      <div class="flow flow--sm">
-        <div class="flow-step is-now"><p class="flow-no">하네스</p><p class="flow-name">환경 설계</p><p class="flow-desc">정의 · 관계 · 네 기둥 · 원칙</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">Skill 선택</p><p class="flow-name">컬렉션</p><p class="flow-desc">어떤 상황에 무엇을 꺼낼지</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">팀 구성</p><p class="flow-name">사례</p><p class="flow-desc">역할 분리와 실제 파일</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">PRD 점검</p><p class="flow-name">검토</p><p class="flow-desc">준비한 문서의 질문과 범위 확인</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">구현 · 배포</p><p class="flow-name">검증</p><p class="flow-desc">작동하는 흐름과 실제 URL 검증</p></div>
-      </div>
-      <div class="note" style="margin-top:26px">하네스는 여러 AI를 반드시 쓰는 기술이 아닙니다. 문서 · 도구 · 권한 · 피드백 · 유지관리 방식을 설계하고, 필요할 때 Skill과 역할을 연결합니다</div>
-      <p class="src">함께 볼 영상 · <a href="https://www.youtube.com/watch?v=MFZX1I_REyg" target="_blank" rel="noopener">하네스 엔지니어링 설명</a> · 정의 · 필요성 · 관계 · 네 기둥 · 다섯 원칙</p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>모델이 똑똑해지면서 AI에게 맡기는 범위가 커졌습니다</h2><span class="head-tag">엔지니어링 · 트렌드</span></div>
-    <div class="slide-body">
-      <div class="flow">
-        <div class="flow-step"><p class="flow-name">자동완성</p><p class="flow-desc">다음 한 줄 제안</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-name">채팅</p><p class="flow-desc">답을 복사해 붙여넣기</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-name">에이전트</p><p class="flow-desc">AI가 직접 파일 작성</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step is-now"><p class="flow-name">에이전트 팀</p><p class="flow-desc">역할을 나눠 협업</p></div>
-      </div>
-      <p class="sub" style="margin-top:24px"><strong class="navy">에이전트(Agent)</strong>: 대답만 하는 AI가 아니라, 스스로 순서를 정하고 파일 읽기·쓰기 같은 도구를 써서 일을 끝까지 해내는 AI</p>
-      <div class="note" style="margin-top:0">오늘은 가장 오른쪽 단계, ‘에이전트 팀’을 직접 만들어 봅니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>사람의 역할이 바뀌었습니다</h2><span class="head-tag">엔지니어링 · 트렌드</span></div>
-    <div class="slide-body">
-      <div class="ba">
-        <div class="ba-col ba--before">
-          <div class="ba-head">예전: 직접 만드는 사람</div>
-          <div class="ba-body">코드를 배우고, 한 줄씩 쓰고, 오류를 직접 찾았습니다.</div>
-        </div>
-        <div class="ba-col ba--after">
-          <div class="ba-head">지금: 설계하고 검수하는 사람</div>
-          <div class="ba-body">무엇을 만들지 정하고, 일하는 규칙을 주고, 결과가 맞는지 확인합니다.</div>
-        </div>
-      </div>
-      <div class="note">그래서 오늘의 핵심은 코딩이 아니라 ‘규칙과 역할을 설계하는 일’입니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>하네스 엔지니어링이란?</h2><span class="head-tag">하네스 · 정의</span></div>
-    <div class="slide-body">
-      <p class="lead">AI가 업무를 안정적으로 수행하도록 <b>일하는 환경 전체</b>를 설계하고 고치는 일입니다.</p>
-      <div class="kv kv--3" style="margin-top:24px">
-        <div class="kv-item"><p class="kv-name">업무 정보</p><p class="kv-like">필요한 문서와 규칙을 찾을 수 있게 둡니다</p></div>
-        <div class="kv-item"><p class="kv-name">도구와 권한</p><p class="kv-like">쓸 수 있는 도구와 금지할 행동을 정합니다</p></div>
-        <div class="kv-item"><p class="kv-name">피드백과 유지관리</p><p class="kv-like">결과를 검사하고, 실패에서 배운 내용을 반영합니다</p></div>
-      </div>
-      <div class="note" style="margin-top:24px">하네스에는 프롬프트와 컨텍스트도 들어갑니다. 팀 구성은 일을 나누는 한 가지 방법이며 필수 조건은 아닙니다</div>
-      <p class="src">함께 볼 영상 · <a href="https://www.youtube.com/watch?v=MFZX1I_REyg" target="_blank" rel="noopener">하네스 엔지니어링 설명</a> · 정의</p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>왜 지금 하네스인가</h2><span class="head-tag">하네스 엔지니어링 · 배경</span></div>
-    <div class="slide-body">
-      <div class="kv kv--3">
-        <div class="kv-item">
-          <p class="kv-name">① 모델은 비슷해졌습니다</p>
-          <p class="kv-like">모델을 그대로 두고 <b>하네스만 바꿨더니</b> 코딩 시험 점수가 52.8% → 66.5%, 순위가 30위권 밖에서 5위권으로 올랐습니다.</p>
-          <p class="kv-when">LangChain · 모델 gpt-5.2-codex 고정 · Terminal-Bench 2.0</p>
-        </div>
-        <div class="kv-item">
-          <p class="kv-name">② 데모에서 실무로</p>
-          <p class="kv-like">긴 일을 맡기면 중간에 길을 잃고, 자기 결과는 늘 ‘잘했다’고 하고, 같은 실수를 되풀이합니다.</p>
-          <p class="kv-when">OpenAI 팀은 5개월 동안 약 100만 줄을 사람이 직접 쓴 코드 0줄로 만들었습니다. 사람은 AI가 일할 환경을 만들었습니다.</p>
-        </div>
-        <div class="kv-item">
-          <p class="kv-name">③ 이렇게 부르기 시작했습니다</p>
-          <p class="kv-like">에이전트가 실수하면, 다시는 그 실수를 못 하도록 해결책을 만들어 둡니다.</p>
-          <p class="kv-when">테라폼을 만든 미첼 하시모토가 이 방식을 “하네스 엔지니어링이라고 부르게 됐다”고 썼습니다 (2026-02)</p>
-        </div>
-      </div>
-      <div class="note" style="margin-top:20px">‘다음엔 잘해 줘’라고 말하는 대신, 잘할 수밖에 없는 환경을 만듭니다</div>
-      <p class="src">출처 · LangChain 블로그(2026-02-17) · OpenAI “Harness engineering”(2026-02-11) · Mitchell Hashimoto “My AI Adoption Journey”(2026-02-05)</p>
+      <ul class="ch-keys"><li>프롬프트 엔지니어링</li><li>컨텍스트 엔지니어링</li><li>하네스 엔지니어링</li></ul>
     </div>
   </section>
   <section class="slide">
@@ -4788,7 +4704,58 @@ body { background: var(--bg); }
       </div>
       <p class="sub" style="margin-top:18px"><strong class="navy">한마디로 <b>AI에게 무엇을 보여 줄까</b>를 설계하는 일입니다</strong></p>
       <p class="sub" style="margin-top:8px"><strong class="navy">컨텍스트 창</strong>: AI가 한 번에 볼 수 있는 양(토큰이라는 단위로 셉니다). 한계가 있고, 길어질수록 앞 내용을 흐리게 다룹니다.</p>
-      <div class="note">팁: 일이 바뀌면 새 대화(<span class="mono">/clear</span>)로 시작하고, 긴 작업은 요약해서 다음 대화에 넘깁니다</div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="slide-head"><h2>모델이 똑똑해지면서 AI에게 맡기는 범위가 커졌습니다</h2><span class="head-tag">엔지니어링 · 트렌드</span></div>
+    <div class="slide-body">
+      <div class="flow">
+        <div class="flow-step"><p class="flow-name">자동완성</p><p class="flow-desc">다음 한 줄 제안</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><p class="flow-name">채팅</p><p class="flow-desc">답을 복사해 붙여넣기</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><p class="flow-name">에이전트</p><p class="flow-desc">AI가 직접 파일 작성</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step is-now"><p class="flow-name">에이전트 팀</p><p class="flow-desc">역할을 나눠 협업</p></div>
+      </div>
+      <p class="sub" style="margin-top:24px"><strong class="navy">에이전트(Agent)</strong>: 대답만 하는 AI가 아니라, 스스로 순서를 정하고 파일 읽기·쓰기 같은 도구를 써서 일을 끝까지 해내는 AI</p>
+      <div class="note" style="margin-top:0">오늘은 가장 오른쪽 단계, ‘에이전트 팀’을 직접 만들어 봅니다</div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="slide-head"><h2>하네스 엔지니어링이란?</h2><span class="head-tag">하네스 · 정의</span></div>
+    <div class="slide-body">
+      <p class="lead">AI가 업무를 안정적으로 수행하도록 <b>일하는 환경 전체</b>를 설계하고 고치는 일입니다.</p>
+      <div class="kv kv--3" style="margin-top:24px">
+        <div class="kv-item"><p class="kv-name">업무 정보</p><p class="kv-like">필요한 문서와 규칙을 찾을 수 있게 둡니다</p></div>
+        <div class="kv-item"><p class="kv-name">도구와 권한</p><p class="kv-like">쓸 수 있는 도구와 금지할 행동을 정합니다</p></div>
+        <div class="kv-item"><p class="kv-name">피드백과 유지관리</p><p class="kv-like">결과를 검사하고, 실패에서 배운 내용을 반영합니다</p></div>
+      </div>
+      <div class="note" style="margin-top:24px">하네스에는 프롬프트와 컨텍스트도 들어갑니다. 팀 구성은 일을 나누는 한 가지 방법이며 필수 조건은 아닙니다</div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="slide-head"><h2>왜 지금 하네스인가</h2><span class="head-tag">하네스 엔지니어링 · 배경</span></div>
+    <div class="slide-body">
+      <div class="kv kv--3">
+        <div class="kv-item">
+          <p class="kv-name">① 모델은 비슷해졌습니다</p>
+          <p class="kv-like">모델을 그대로 두고 <b>하네스만 바꿨더니</b> 코딩 시험 점수가 52.8% → 66.5%, 순위가 30위권 밖에서 5위권으로 올랐습니다.</p>
+          <p class="kv-when">LangChain · 모델 gpt-5.2-codex 고정 · Terminal-Bench 2.0</p>
+        </div>
+        <div class="kv-item">
+          <p class="kv-name">② 데모에서 실무로</p>
+          <p class="kv-like">긴 일을 맡기면 중간에 길을 잃고, 자기 결과는 늘 ‘잘했다’고 하고, 같은 실수를 되풀이합니다.</p>
+          <p class="kv-when">OpenAI 팀은 5개월 동안 약 100만 줄을 사람이 직접 쓴 코드 0줄로 만들었습니다. 사람은 AI가 일할 환경을 만들었습니다.</p>
+        </div>
+        <div class="kv-item">
+          <p class="kv-name">③ 이렇게 부르기 시작했습니다</p>
+          <p class="kv-like">에이전트가 실수하면, 다시는 그 실수를 못 하도록 해결책을 만들어 둡니다.</p>
+          <p class="kv-when">테라폼을 만든 미첼 하시모토가 이 방식을 “하네스 엔지니어링이라고 부르게 됐다”고 썼습니다 (2026-02)</p>
+        </div>
+      </div>
+      <div class="note" style="margin-top:20px">‘다음엔 잘해 줘’라고 말하는 대신, 잘할 수밖에 없는 환경을 만듭니다</div>
+      <p class="src">출처 · LangChain 블로그(2026-02-17) · OpenAI “Harness engineering”(2026-02-11) · Mitchell Hashimoto “My AI Adoption Journey”(2026-02-05)</p>
     </div>
   </section>
   <section class="slide">
@@ -4803,14 +4770,13 @@ body { background: var(--bg); }
         </tbody>
       </table>
       <div class="note" style="margin-top:24px">프롬프트는 한 번의 요청을 정하고, 컨텍스트는 그 요청에 필요한 정보를 고릅니다. 하네스는 이 둘을 포함해 작업 전후의 환경까지 다룹니다</div>
-      <p class="src">함께 볼 영상 · <a href="https://www.youtube.com/watch?v=MFZX1I_REyg" target="_blank" rel="noopener">하네스 엔지니어링 설명</a> · 프롬프트 · 컨텍스트 · 하네스의 관계</p>
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>하네스 엔지니어링의 네 기둥</h2><span class="head-tag">하네스 · 네 기둥</span></div>
+    <div class="slide-head"><h2>하네스 엔지니어링을 이루는 네 가지</h2><span class="head-tag">하네스 · 네 가지</span></div>
     <div class="slide-body">
       <table class="agenda agenda--sm">
-        <thead><tr><th>기둥</th><th>설계 질문</th><th>Claude Code에서 적용하는 예</th></tr></thead>
+        <thead><tr><th>구분</th><th>설계 질문</th><th>Claude Code에서 적용하는 예</th></tr></thead>
         <tbody>
           <tr><td class="m">① 컨텍스트 엔지니어링</td><td>이 일에 필요한 정보는 무엇인가?</td><td>짧은 CLAUDE.md와 필요한 참고 문서</td></tr>
           <tr><td class="m">② 아키텍처 제약</td><td>허용할 도구와 반드시 통과할 조건은 무엇인가?</td><td>도구 권한, 훅, 형식 검사</td></tr>
@@ -4818,12 +4784,11 @@ body { background: var(--bg); }
           <tr><td class="m">④ 엔트로피 관리</td><td>문서와 코드가 오래되어 어긋나지 않게 할까?</td><td>낡은 규칙, 중복 코드, 미사용 파일을 점검</td></tr>
         </tbody>
       </table>
-      <div class="note" style="margin-top:20px">이 네 기둥은 설계 관점입니다. CLAUDE.md, Skill, Subagent, 훅과 테스트는 이를 구현하는 Claude Code의 부품입니다</div>
-      <p class="src">함께 볼 영상 · <a href="https://www.youtube.com/watch?v=MFZX1I_REyg" target="_blank" rel="noopener">하네스 엔지니어링 설명</a> · 네 기둥</p>
+      <div class="note" style="margin-top:20px">이 네 가지는 설계 관점입니다. CLAUDE.md, Skill, Subagent, 훅과 테스트는 이를 구현하는 Claude Code의 부품입니다</div>
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>기둥 1 · 필요한 맥락을 짧게 제공합니다</h2><span class="head-tag">네 기둥 · 컨텍스트</span></div>
+    <div class="slide-head"><h2>① 필요한 맥락을 짧게 제공합니다</h2><span class="head-tag">하네스 · 컨텍스트</span></div>
     <div class="slide-body">
       <div class="kv kv--2">
         <div class="kv-item"><p class="kv-name">항상 필요한 안내</p><p class="kv-like"><span class="mono">CLAUDE.md</span>에 프로젝트 목적, 자주 쓰는 명령, 꼭 지킬 규칙을 짧게 둡니다.</p><p class="kv-when">한 파일에 모든 지식을 넣기보다 필요한 문서의 위치를 알려 줍니다</p></div>
@@ -4833,25 +4798,7 @@ body { background: var(--bg); }
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>규칙서를 ‘나’와 ‘팀’으로 나눕니다</h2><span class="head-tag">한 단계 위</span></div>
-    <div class="slide-body">
-      <table class="agenda">
-        <thead><tr><th>규칙서를 두는 곳</th><th>담는 내용</th><th>언제 읽나</th></tr></thead>
-        <tbody>
-          <tr><td>내 컴퓨터 전체</td><td>나만의 습관 (예: 답은 표로 먼저)</td><td>어느 폴더에서 일하든</td></tr>
-          <tr><td>이 작업 폴더</td><td>팀 규칙 (예: 가격은 원 단위)</td><td>이 폴더에서 일할 때</td></tr>
-          <tr><td>폴더 안의 작은 폴더</td><td>그 일에만 필요한 규칙</td><td>그 폴더 일을 할 때만</td></tr>
-        </tbody>
-      </table>
-      <div class="pbox">
-        <p>“‘답은 표로 먼저 보여 줘’를 내 컴퓨터 전체에 적용되는 규칙서에 추가해 줘.”</p>
-        <p>“긴 용어 설명은 용어집 파일로 따로 빼고, 규칙서에는 그 파일을 읽으라는 한 줄만 남겨 줘.”</p>
-      </div>
-      <div class="note">규칙서가 길면 AI가 중요한 규칙을 놓칩니다. 짧게 두고, 자세한 자료는 필요할 때만 읽게 합니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>기둥 2 · 중요한 제약은 도구로 확인합니다</h2><span class="head-tag">네 기둥 · 아키텍처 제약</span></div>
+    <div class="slide-head"><h2>② 중요한 제약은 도구로 확인합니다</h2><span class="head-tag">하네스 · 아키텍처 제약</span></div>
     <div class="slide-body">
       <div class="kv kv--2">
         <div class="kv-item"><p class="kv-name">권한으로 제한</p><p class="kv-like">필요한 파일과 도구만 허용합니다.</p><p class="kv-when">예: 검토 역할은 쓰기 도구와 실행 권한을 제한하고 결과만 보고</p></div>
@@ -4861,32 +4808,18 @@ body { background: var(--bg); }
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>훅은 정해진 시점에 검사를 실행합니다</h2><span class="head-tag">제약 · 훅</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm">
-        <thead><tr><th>시점</th><th>직접 하는 일</th><th>주의</th></tr></thead>
-        <tbody>
-          <tr><td class="m">도구 실행 전</td><td>허용 폴더 밖에 쓰려는 요청을 차단</td><td>실제 경로와 도구 권한을 확인</td></tr>
-          <tr><td class="m">Edit · Write 후</td><td>형식 검사나 필요한 테스트를 실행</td><td>Bash 등 다른 쓰기 경로는 별도 통제가 필요</td></tr>
-          <tr><td class="m">작업 종료 전</td><td>PRD의 필수 완료 기준과 검사 결과 확인</td><td>통과 증거가 없으면 완료로 보고하지 않음</td></tr>
-        </tbody>
-      </table>
-      <div class="note">훅 하나가 모든 변경을 자동으로 막는다고 가정하지 않습니다. 어떤 도구와 시점을 감싸는지 직접 확인합니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>기둥 3 · 검사 결과를 다음 수정에 연결합니다</h2><span class="head-tag">네 기둥 · 피드백 루프</span></div>
+    <div class="slide-head"><h2>③ 검사 결과를 다음 수정에 연결합니다</h2><span class="head-tag">하네스 · 피드백 루프</span></div>
     <div class="slide-body">
       <div class="flow">
         <div class="flow-step"><p class="flow-no">1</p><p class="flow-name">구현</p><p class="flow-desc">PRD 범위만 만듭니다</p></div>
         <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">2</p><p class="flow-name">외부 기준 확인</p><p class="flow-desc">테스트 · 완료 기준 · 검토 의견</p></div>
+        <div class="flow-step"><p class="flow-no">2</p><p class="flow-name">정해 둔 기준으로 확인</p><p class="flow-desc">테스트 · 완료 기준 · 검토 의견</p></div>
         <div class="flow-arrow">→</div>
         <div class="flow-step"><p class="flow-no">3</p><p class="flow-name">수정</p><p class="flow-desc">실패 원인을 고칩니다</p></div>
         <div class="flow-arrow">→</div>
         <div class="flow-step is-now"><p class="flow-no">4</p><p class="flow-name">재확인</p><p class="flow-desc">같은 기준을 다시 통과합니다</p></div>
       </div>
-      <div class="note" style="margin-top:28px">AI의 “완료했습니다”만 믿지 않고, 결과 밖에 있는 기준으로 확인합니다. 검토 담당을 따로 두는 것은 피드백 루프를 만드는 한 가지 방법입니다</div>
+      <div class="note" style="margin-top:28px">AI의 “완료했습니다”만 믿지 않고, 미리 정해 둔 기준(테스트 · 완료 기준 · 검토 의견)으로 확인합니다. 검토 담당을 따로 두는 것은 피드백 루프를 만드는 한 가지 방법입니다</div>
     </div>
   </section>
   <section class="slide">
@@ -4899,6 +4832,7 @@ body { background: var(--bg); }
         <p>테스트 이름은 완료 기준 문장 그대로 써.</p>
         <p>npm test 가 모두 통과하기 전에는 끝났다고 말하지 마.</p>
       </div>
+      <p class="sub" style="margin-top:16px"><strong class="navy">Playwright</strong>: Microsoft가 만든 무료 브라우저 자동화 도구입니다. 브라우저를 직접 열어 사람처럼 클릭하고 입력한 뒤, 화면에 원하는 결과가 나왔는지 확인합니다. 설치도 Claude에게 맡기면 됩니다.</p>
         </div>
         <div class="split-side" style="flex-basis:420px">
 <div class="ans"><p class="ans-title">이렇게 하면</p><ul><li>눌러 보던 확인을 컴퓨터가 대신합니다</li><li>기능을 고친 뒤에도 예전 기능이 깨졌는지 바로 압니다</li><li>테스트가 실패하면 실패 문구를 그대로 다시 붙여 넣습니다</li></ul></div>
@@ -4908,7 +4842,7 @@ body { background: var(--bg); }
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>기둥 4 · 작업 환경의 낡은 부분을 정리합니다</h2><span class="head-tag">네 기둥 · 엔트로피 관리</span></div>
+    <div class="slide-head"><h2>④ 작업 환경의 낡은 부분을 정리합니다</h2><span class="head-tag">하네스 · 엔트로피 관리</span></div>
     <div class="slide-body">
       <table class="agenda">
         <thead><tr><th>쌓이는 문제</th><th>점검</th><th>정리 후 확인</th></tr></thead>
@@ -4934,84 +4868,6 @@ body { background: var(--bg); }
         </tbody>
       </table>
       <div class="note" style="margin-top:14px">처음부터 복잡한 팀을 만들지 않습니다. 작은 환경으로 시작하고, 실제 실패가 생겼을 때 필요한 장치만 추가합니다</div>
-      <p class="src">함께 볼 영상 · <a href="https://www.youtube.com/watch?v=MFZX1I_REyg" target="_blank" rel="noopener">하네스 엔지니어링 설명</a> · 다섯 원칙</p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>Skill = 반복 작업 매뉴얼</h2><span class="head-tag">구현 도구 · Skill</span></div>
-    <div class="slide-body">
-      <div class="kv kv--2">
-        <div class="kv-item">
-          <p class="kv-name">쉽게 말하면</p>
-          <p class="kv-like">자주 하는 일의 순서를 적어 둔 업무 매뉴얼입니다. 이름을 부르거나 관련 요청을 하면 Claude가 꺼내 씁니다.</p>
-          <p class="kv-when">1회차에서 본 <b>연결 어댑터(MCP)</b>는 절차 안에서 쓰는 도구입니다. 예: ②에서 지난번 조사 파일을 공유 드라이브에서 읽어 오는 일을 MCP가 맡습니다.</p>
-        </div>
-        <div class="kv-item">
-          <p class="kv-name">예시: 주간 경쟁 제품 리포트</p>
-          <p class="kv-like">① 경쟁 브랜드 공식 홈페이지에서 가격을 조사한다</p>
-          <p class="kv-like">② 지난번 조사 파일과 달라진 가격만 뽑는다</p>
-          <p class="kv-like">③ 정해진 표 형식으로 요약한다</p>
-        </div>
-      </div>
-      <div class="note">CLAUDE.md는 ‘항상 지킬 규칙’, Skill은 ‘필요할 때 꺼내는 절차’입니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>실무에서 꺼내 쓰는 세 가지 Skill 컬렉션</h2><span class="head-tag">Skill 컬렉션</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm">
-        <thead><tr><th>컬렉션</th><th>주된 목적</th><th>이 수업에서 쓰는 단계</th><th>설정</th></tr></thead>
-        <tbody>
-          <tr><td class="m">Superpowers</td><td>요구 정리 · 계획 · 디버깅 · 완료 증거</td><td>PRD 질문 → 구현 계획 → 실패 수정</td><td>Claude 공식 또는 자체 마켓플레이스 플러그인</td></tr>
-          <tr><td class="m">gstack</td><td>제품 계획 · 브라우저 QA · 코드 리뷰</td><td>localhost 핵심 흐름 검증</td><td>공식 README의 별도 설치 절차 확인</td></tr>
-          <tr><td class="m">Matt Pocock skills</td><td>요구 인터뷰 · TDD · 버그 진단 · 코드 리뷰</td><td>PRD 압박 질문과 구현 검토</td><td>설치된 버전의 Skill 목록 확인</td></tr>
-        </tbody>
-      </table>
-      <div class="note">컬렉션 이름보다 <b>어느 단계에서 무엇을 얻는지</b>를 기억합니다. 공식 문서와 요청 예시로 활용 방법을 안내합니다</div>
-      <p class="src">출처 · <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">Superpowers</a> · <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">gstack</a> · <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">Matt Pocock skills</a></p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>Superpowers · 요구에서 완료 증거까지</h2><span class="head-tag">Skill 컬렉션</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm">
-        <thead><tr><th>Skill</th><th>언제</th><th>받을 결과</th></tr></thead>
-        <tbody>
-          <tr><td class="m">brainstorming</td><td>준비한 PRD에 아직 결정하지 않은 항목이 있을 때</td><td>한 번에 하나씩 묻는 질문과 확정된 선택</td></tr>
-          <tr><td class="m">writing-plans</td><td>확정한 PRD를 구현 직전 작업으로 나눌 때</td><td>파일 · 단계 · 확인 방법이 있는 계획</td></tr>
-          <tr><td class="m">systematic-debugging</td><td>체크했는데 완료 개수가 바뀌지 않을 때</td><td>재현 → 증거 → 원인 → 작은 수정 → 같은 확인</td></tr>
-          <tr><td class="m">verification-before-completion</td><td>완료라고 말하기 직전</td><td>실행한 검사와 결과 증거</td></tr>
-        </tbody>
-      </table>
-      <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:14px"><p>“Superpowers의 brainstorming으로 준비한 prd.md에서 아직 결정하지 않은 것만 질문해 줘. 이미 정한 주제는 다시 고르지 마.”</p></div>
-      <p class="src">출처 · <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">github.com/obra/superpowers</a></p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>gstack · 브라우저에서 실제 흐름을 확인합니다</h2><span class="head-tag">Skill 컬렉션</span></div>
-    <div class="slide-body">
-      <div class="kv kv--2">
-        <div class="kv-item"><p class="kv-name"><span class="mono">/qa</span> · 확인하고 수정</p><p class="kv-like">localhost를 열어 핵심 흐름을 직접 누르고, 발견한 문제를 고친 뒤 다시 확인합니다.</p><p class="kv-when">산출물: 실행한 시나리오, 테스트 · 화면 증거, 수정 내용, 남은 문제</p></div>
-        <div class="kv-item"><p class="kv-name"><span class="mono">/qa-only</span> · 보고만</p><p class="kv-like">변경을 원하지 않을 때 같은 흐름을 검사하고 문제만 보고합니다.</p><p class="kv-when"><span class="mono">/ship</span>은 검사 · push · PR 흐름이며 AxHub 배포 명령이 아닙니다</p></div>
-      </div>
-      <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:16px"><p>“/qa로 localhost의 점검 체크리스트를 확인해 줘. 체크 표시, 완료 개수, 초기화를 실제로 눌러 보고 수정 후 같은 기준을 다시 확인해.”</p></div>
-      <p class="src">출처 · <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">github.com/garrytan/gstack</a> · 설정은 공식 README 확인</p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>Matt Pocock skills · 질문과 코드 품질을 분리합니다</h2><span class="head-tag">Skill 컬렉션</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm">
-        <thead><tr><th>Skill</th><th>이 수업에서 쓸 때</th><th>핵심 결과</th></tr></thead>
-        <tbody>
-          <tr><td class="m">grilling</td><td>준비한 PRD의 모호함과 되돌리기 어려운 결정을 질문</td><td>결정된 요구와 남은 질문</td></tr>
-          <tr><td class="m">tdd</td><td>실패하는 확인을 먼저 만들 수 있는 기능</td><td>실패 → 최소 구현 → 통과</td></tr>
-          <tr><td class="m">diagnosing-bugs</td><td>재현되는 오류의 원인을 찾을 때</td><td>재현 증거와 근본 원인</td></tr>
-          <tr><td class="m">code-review</td><td>기준 브랜치와 PRD가 있는 변경을 검토할 때</td><td>코딩 기준과 PRD 일치 여부</td></tr>
-        </tbody>
-      </table>
-      <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:12px"><p>“grilling 스킬로 준비한 prd.md의 미해결 결정만 질문해 줘.”</p><p>“점검한 prd.md와 main 기준 변경을 code-review로 검토해 줘. 코드는 바꾸지 마.”</p></div>
-      <p class="src">출처 · <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">github.com/mattpocock/skills</a> · 공개 명령과 설치된 Skill 이름은 버전에 따라 다를 수 있음</p>
     </div>
   </section>
   <section class="slide">
@@ -5065,13 +4921,35 @@ body { background: var(--bg); }
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>반복과 연결은 하네스 안의 선택 구조입니다</h2><span class="head-tag">하네스 · 실행 구조</span></div>
+    <div class="slide-head"><h2>하네스는 이렇게 일하고, 각 단계에서 Skill을 꺼내 씁니다</h2><span class="head-tag">하네스 · 동작 예시</span></div>
     <div class="slide-body">
-      <div class="kv kv--2">
-        <div class="kv-item"><p class="kv-name">반복이 필요한 일</p><p class="kv-like">검사에 실패하면 원인을 고치고 같은 기준을 다시 실행합니다.</p><p class="kv-when">예: 테스트 실패 → 작은 수정 → 같은 테스트 재실행</p></div>
-        <div class="kv-item"><p class="kv-name">여러 단계가 연결된 일</p><p class="kv-like">앞 단계의 결과를 다음 단계의 입력으로 넘깁니다.</p><p class="kv-when">예: 자료 수집 → 초안 → 독립 검토</p></div>
+      <p class="sub" style="margin:0 0 14px; font-size:18px"><strong class="navy">메인 대화(오케스트레이터)</strong>가 순서를 지휘하고, 필요한 단계마다 담당에게 일을 넘깁니다 · 담당은 자기 역할에 맞는 Skill을 꺼내 씁니다</p>
+      <div class="flow">
+        <div class="flow-step"><p class="flow-no">1</p><p class="flow-name">요구 정리</p><p class="flow-desc">메인 대화가 직접 · PRD와 규칙서를 읽고 정할 것 확인</p><p class="flow-skill">brainstorming<small>빠진 결정을 하나씩 질문</small></p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><p class="flow-no">2</p><p class="flow-name">계획</p><p class="flow-desc">담당: planner · 단계와 확인 방법을 씀</p><p class="flow-skill">writing-plans<small>작은 단계로 나눈 계획</small></p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><p class="flow-no">3</p><p class="flow-name">구현</p><p class="flow-desc">담당: implementer · 계획대로 만듦</p><p class="flow-skill">tdd<small>확인 테스트부터 만들기</small></p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step is-now"><p class="flow-no">4</p><p class="flow-name">검증</p><p class="flow-desc">담당: reviewer · 완료 기준으로 확인</p><p class="flow-skill">/qa · code-review<small>브라우저로 눌러 보고 검토</small></p></div>
       </div>
-      <div class="note">루프와 그래프는 업무에 필요할 때 선택합니다. 여러 에이전트나 복잡한 구조가 하네스의 필수 조건은 아닙니다</div>
+      <p class="sub" style="margin:14px 0 0; font-size:18px"><strong class="navy">검증에서 실패하면</strong> → 3 구현으로 돌아가 고치고 다시 확인합니다 · 원인을 모르겠으면 <b style="color:var(--green)">systematic-debugging</b>(원인부터 찾기)</p>
+      <div class="note">모든 단계에 담당을 붙이지는 않습니다. 작은 일은 메인 대화가 직접 하고, 나눌 가치가 있는 단계에만 담당을 둡니다</div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="slide-head"><h2>실무에서 꺼내 쓰는 세 가지 Skill 컬렉션</h2><span class="head-tag">Skill 컬렉션</span></div>
+    <div class="slide-body">
+      <table class="agenda agenda--sm">
+        <thead><tr><th>컬렉션</th><th>주된 목적</th><th>이럴 때 유용</th><th>설정</th></tr></thead>
+        <tbody>
+          <tr><td class="m">Superpowers</td><td>요구 정리 · 계획 · 디버깅 · 완료 증거</td><td>PRD 질문 → 구현 계획 → 실패 수정</td><td>Claude 공식 또는 자체 마켓플레이스 플러그인</td></tr>
+          <tr><td class="m">gstack</td><td>제품 계획 · 브라우저 QA · 코드 리뷰</td><td>localhost 핵심 흐름 검증</td><td>공식 README의 별도 설치 절차 확인</td></tr>
+          <tr><td class="m">Matt Pocock skills</td><td>요구 인터뷰 · TDD · 버그 진단 · 코드 리뷰</td><td>PRD 압박 질문과 구현 검토</td><td>설치된 버전의 Skill 목록 확인</td></tr>
+        </tbody>
+      </table>
+      <div class="note">컬렉션 이름보다 <b>어느 단계에서 무엇을 얻는지</b>를 기억해 두세요. 필요할 때 아래 링크에서 설명을 보고 설치하면 됩니다</div>
+      <p class="src">출처 · <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">Superpowers</a> · <a href="https://github.com/garrytan/gstack" target="_blank" rel="noopener">gstack</a> · <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">Matt Pocock skills</a></p>
     </div>
   </section>
   <section class="slide">
@@ -5116,7 +4994,7 @@ body { background: var(--bg); }
       </div>
       <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:16px">
         <p>“하네스 구성해줘. prd.md를 읽고 기획 · 개발 · 검토 역할로 구성해 줘.</p>
-        <p>개발은 상태가 ‘확정’일 때만 시작하고, 검토는 완료 기준으로 확인한 뒤 문제만 보고해 줘.”</p>
+        <p>검토는 완료 기준으로 확인한 뒤 문제만 보고해 줘.”</p>
       </div>
       <div class="note" style="margin-top:14px">역할 분리를 익히기 위해 같은 작은 과제를 팀으로 실행합니다. 실제 업무에서는 한 AI로 충분하면 팀을 만들지 않아도 됩니다</div>
     </div>
@@ -5124,29 +5002,18 @@ body { background: var(--bg); }
   <section class="slide">
     <div class="slide-head"><h2>하네스 플러그인 안에는 스킬 두 개가 있습니다</h2><span class="head-tag">플러그인 속 구조</span></div>
     <div class="slide-body">
-      <div class="kv kv--2 kv--dense">
+      <div class="kv kv--2">
         <div class="kv-item">
-          <p class="kv-name"><span class="mono">harness</span> · 만들고 넓히고 점검합니다</p>
-          <p class="kv-like">부르는 말: <b>“하네스 구성해줘”</b> · “에이전트 팀 만들어줘” · “하네스 점검”</p>
-          <p class="kv-when">프로젝트에 맞는 하네스를 설계하고, 전문 에이전트와 각 에이전트가 쓸 스킬을 만듭니다 · 기존 하네스를 재구성 · 확장하거나 점검할 때도 씁니다</p>
+          <p class="kv-name" style="font-size:26px"><span class="mono">harness</span> · 만들고 넓히고 점검합니다</p>
+          <p class="kv-like" style="font-size:20px; margin-top:12px">부르는 말: <b>“하네스 구성해줘”</b> · “에이전트 팀 만들어줘” · “하네스 점검”</p>
+          <p class="kv-when" style="font-size:19px; line-height:1.6">프로젝트에 맞는 하네스를 설계하고, 전문 에이전트와 각 에이전트가 쓸 스킬을 만듭니다 · 기존 하네스를 재구성 · 확장하거나 점검할 때도 씁니다</p>
         </div>
         <div class="kv-item">
-          <p class="kv-name"><span class="mono">evolve</span> · 써 본 뒤 고칩니다</p>
-          <p class="kv-like">부르는 말: <b>“하네스 회고해줘”</b> · “이 피드백 하네스에 반영해줘”</p>
-          <p class="kv-when">실행 결과에 대한 피드백을 모아 일반화해 에이전트 · 스킬 · 오케스트레이터에 반영하고 변경 이력을 갱신합니다 · 새로 구축 · 팀원 추가는 harness 담당</p>
+          <p class="kv-name" style="font-size:26px"><span class="mono">evolve</span> · 써 본 뒤 고칩니다</p>
+          <p class="kv-like" style="font-size:20px; margin-top:12px">부르는 말: <b>“하네스 회고해줘”</b> · “이 피드백 하네스에 반영해줘”</p>
+          <p class="kv-when" style="font-size:19px; line-height:1.6">써 본 뒤 나온 피드백을 바탕으로 팀원 파일 · 스킬 · 진행 순서를 고쳐 하네스를 업데이트합니다 · 바꾼 내용은 변경 이력에 남깁니다</p>
         </div>
       </div>
-      <p class="sub" style="margin:16px 0 8px; font-size:18px"><b class="navy">스킬 한 개 = <span class="mono">SKILL.md</span>(본문 지시) + <span class="mono">references/</span>(필요할 때만 읽는 참고 문서)</b> · 앞에서 본 ‘Skill = 반복 작업 매뉴얼’의 실제 모습입니다</p>
-      <table class="agenda agenda--sm" style="font-size:16px">
-        <thead><tr><th colspan="4"><span class="mono">harness/references/</span> 안의 참고 문서 9개</th></tr></thead>
-        <tbody>
-          <tr><td class="mono">team-patterns.md</td><td>팀 구성 방식 6가지 · 에이전트 정의 구조</td><td class="mono">execution-modes.md</td><td>실행 모드 3가지 비교 · 선택 기준</td></tr>
-          <tr><td class="mono">team-examples.md</td><td>실전 팀 구성 예시</td><td class="mono">orchestrator-template.md</td><td>진행 순서를 맡는 오케스트레이터 틀</td></tr>
-          <tr><td class="mono">workflow-recipes.md</td><td>워크플로 스크립트 예시 · 주의할 점</td><td class="mono">model-selection-guide.md</td><td>팀원별 모델 고르는 기준</td></tr>
-          <tr><td class="mono">skill-writing-guide.md</td><td>스킬 작성법</td><td class="mono">skill-testing-guide.md</td><td>스킬 테스트 · 반복 개선</td></tr>
-          <tr><td class="mono">qa-agent-guide.md</td><td>검사(QA) 담당 설계법</td><td></td><td></td></tr>
-        </tbody>
-      </table>
     </div>
   </section>
   <section class="slide">
@@ -5155,7 +5022,7 @@ body { background: var(--bg); }
       <ol class="steps steps--cols" style="counter-reset: step -1; font-size:20px">
         <li><b>현재 상태 점검</b> <span class="grn">· 사람 확인</span><small><span class="mono">.claude/agents</span> · <span class="mono">skills</span> · <span class="mono">CLAUDE.md</span>를 읽고 새로 구축 / 확장 / 유지 보수 중 고름 → 점검 결과와 실행 계획을 알리고 확인받음</small></li>
         <li><b>분야와 작업 분석</b><small>작업 종류(생성 · 검증 · 편집 · 분석)를 나누고, 일의 흐름과 기존 팀원 · 스킬과 겹치는지 확인</small></li>
-        <li><b>실행 모드와 팀 구조 설계</b><small>실행 모드 3가지 · 팀 구성 방식 6가지 중에서 고름 (다음 장)</small></li>
+        <li><b>실행 모드와 팀 구조 설계</b><small>실행 모드 3가지 · 팀 구성 방식 6가지 중에서 고름</small></li>
         <li><b>에이전트 정의 작성</b><small><span class="mono">.claude/agents/{이름}.md</span> · 역할, 모델, 쓸 수 있는 도구(검토 담당은 Edit · Write 뺌)</small></li>
         <li><b>스킬 작성</b><small><span class="mono">.claude/skills/{이름}/SKILL.md</span> · description에 언제 부를지, 본문에 일하는 방법</small></li>
         <li><b>통합하고 실행 순서 정하기</b><small>오케스트레이터 스킬로 누가 언제 어떤 순서로 일할지 묶음 · <span class="mono">CLAUDE.md</span>에 호출 조건과 변경 이력만 기록</small></li>
@@ -5163,28 +5030,6 @@ body { background: var(--bg); }
         <li><b>운영 · 유지 보수와 개선</b><small>한 번에 하나씩 고치고 변경 이력 기록 · 회고와 피드백 반영은 <span class="mono">evolve</span></small></li>
       </ol>
       <div class="note" style="margin-top:16px">사람이 확인하는 지점: 0단계 끝에서 점검 결과와 실행 계획을 보고 확인한 뒤에 만들기 시작합니다 · 워크플로 방식은 사용자가 명시적으로 동의해야 씁니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>팀 구성 방식 6가지와 실행 모드 3가지</h2><span class="head-tag">플러그인 속 구조</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm" style="font-size:16px">
-        <thead><tr><th>팀 구성 방식</th><th>일하는 모양</th><th>사무 업무라면</th></tr></thead>
-        <tbody>
-          <tr><td class="m">파이프라인</td><td>앞 단계 결과를 받아 순서대로 처리</td><td>자료 수집 → 초안 → 다듬기 → 보고서</td></tr>
-          <tr><td class="m">분산 · 통합(팬아웃/팬인)</td><td>독립 작업을 나눠 동시에 처리한 뒤 합침</td><td>매장별 매출 파일을 나눠 요약 → 하나로 합침</td></tr>
-          <tr><td class="m">전문가 풀</td><td>입력에 맞는 전문가만 골라 부름</td><td>문의 유형에 따라 반품 · 배송 · 제품 담당 중 한 명</td></tr>
-          <tr><td class="m">생성 · 검증</td><td>하나가 만들고 다른 하나가 검토</td><td>주간 보고 작성 담당 + 검토 담당</td></tr>
-          <tr><td class="m">감독자</td><td>중앙 담당이 진행을 보고 일을 다시 나눔</td><td>행사 준비: 총괄이 남은 일을 계속 재배분</td></tr>
-          <tr><td class="m">계층형 위임</td><td>상위가 하위에게 다시 맡김 (두 단계까지)</td><td>시장 조사: 총괄 → 지역별 조사 담당</td></tr>
-        </tbody>
-      </table>
-      <div class="kv kv--3 kv--dense" style="margin-top:14px">
-        <div class="kv-item"><p class="kv-name" style="font-size:18px">워크플로 조율</p><p class="kv-like">처리 목록 · 검증 · 반복 횟수를 미리 정할 수 있는 일</p></div>
-        <div class="kv-item"><p class="kv-name" style="font-size:18px">지속형 에이전트 협업</p><p class="kv-like">이름 있는 팀원이 대화 맥락을 이어 가며 피드백을 주고받는 일</p></div>
-        <div class="kv-item"><p class="kv-name" style="font-size:18px">서브에이전트 위임</p><p class="kv-like">서로 대화할 필요 없이 결과만 한 번 받으면 되는 일</p></div>
-      </div>
-      <div class="note" style="margin-top:14px">팀 크기가 아니라 <b>일의 흐름 모양</b>으로 고릅니다 · 직접 고르지 않아도 됩니다. 플러그인이 “목록을 미리 나열할 수 있나, 다시 고치는 반복이 필요한가”를 따져 정하며, 코딩 경험이 적은 사용자에게는 전문 용어를 설명 없이 쓰지 않게 돼 있습니다</div>
     </div>
   </section>
   <section class="slide">
@@ -5253,34 +5098,6 @@ body { background: var(--bg); }
         </div>
       </div>
       <div class="note" style="margin-top:14px"><span class="mono">~/</span>는 내 컴퓨터 전체, <span class="mono">./</span>와 <span class="mono">.claude/</span>는 이 작업 폴더 기준입니다 · 팀원 · Skill도 <span class="mono">~/.claude/</span> 아래에 두면 어느 폴더에서든 씁니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>실제 작업 흐름 한 장: 요청에서 반영까지</h2><span class="head-tag">실제 사례 ①</span></div>
-    <div class="slide-body">
-      <div class="flow flow--sm">
-        <div class="flow-step"><p class="flow-no">1</p><p class="flow-name">요청</p><p class="flow-desc">제가 말로 요청 · Claude는 <b>CLAUDE.md</b>를 먼저 읽음</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">2</p><p class="flow-name">계획</p><p class="flow-desc">메인 Claude가 계획 · 큰 일은 <b>planner</b>(읽기 전용)</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">3</p><p class="flow-name">승인</p><p class="flow-desc"><b>사람이</b> 계획을 읽고 확인한 뒤에만 시작</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">4</p><p class="flow-name">구현</p><p class="flow-desc"><b>implementer</b>가 받은 계획만 · 원본과 떨어진 작업용 복사본(워크트리)에서</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">5</p><p class="flow-name">리뷰</p><p class="flow-desc"><b>reviewer</b>가 바뀐 부분 검토(읽기 전용) · 훅 · 테스트</p></div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step"><p class="flow-no">6</p><p class="flow-name">반영</p><p class="flow-desc">지적을 고치고 합침 · 같은 지적이 또 나오면 규칙에 추가</p></div>
-      </div>
-      <table class="agenda agenda--sm" style="margin-top:18px; font-size:16px">
-        <thead><tr><th>네 요소</th><th>이 흐름에서 맡는 곳</th></tr></thead>
-        <tbody>
-          <tr><td class="m">규칙 · CLAUDE.md</td><td>1 요청 때 읽고, 누구에게 맡길지(2 · 4 · 5)를 정함 — 다음 장</td></tr>
-          <tr><td class="m">절차 · Skill</td><td>단계마다 꺼내 씀 · 예: 요청이 모호하면 되묻는 Skill(<span class="mono">grill-me</span>), 리뷰 절차</td></tr>
-          <tr><td class="m">담당 · Subagent</td><td>planner · implementer · reviewer — 그다음 두 장</td></tr>
-          <tr><td class="m">검증 · 훅 · 테스트</td><td>5 리뷰에서 자동 점검 + 3 승인 · 마지막 확인은 사람</td></tr>
-        </tbody>
-      </table>
-      <div class="note" style="margin-top:14px"><b>계획은 파일로 남깁니다</b> — 새 대화에는 자동으로 이어지지 않으므로, 실패했을 때 계획이 틀렸는지 실행이 틀렸는지 가릴 수 있게 · 요청이 모호하면 시작 전에 <b>되묻게</b> 합니다</div>
     </div>
   </section>
   <section class="slide">
@@ -5355,57 +5172,6 @@ Report findings most severe first, each with file:line, the failure scenario (co
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>팀원 파일 ②: implementer는 받은 것만 구현합니다</h2><span class="head-tag">실제 사례 ①</span></div>
-    <div class="slide-body">
-      <div class="split">
-        <div class="split-main">
-          <p class="filebox-t"><span class="mono">~/.claude/agents/implementer.md</span></p>
-          <div class="filebox">---
-name: implementer
-description: Execute an approved plan or a clearly specified code change. Edits files, runs tests, reports results. Use after planner, or directly for reproducible bug fixes and mechanical edits.
-model: opus
----
-
-You implement exactly the plan or change you are given. <span class="hl">Do not widen scope.</span>
-
-- Follow the plan's steps in order. If a step is impossible, <span class="hl">stop and report why instead of improvising.</span>
-- Reuse existing helpers before writing new code. Shortest working diff.
-- Run the verification named in the plan (or the project's tests) and paste the result.
-- Report: files changed, test output, anything skipped and why.</div>
-        </div>
-        <div class="split-side" style="flex-basis:400px">
-          <table class="agenda agenda--sm" style="font-size:16px">
-            <thead><tr><th>원문</th><th>뜻</th></tr></thead>
-            <tbody>
-              <tr><td class="m">tools 줄 없음</td><td>도구를 제한하지 않아 구현과 테스트에 필요한 도구를 사용할 수 있음</td></tr>
-              <tr><td class="m">Do not widen scope</td><td>받은 계획 밖으로 범위를 넓히지 않습니다</td></tr>
-              <tr><td class="m">stop and report</td><td>막히면 즉흥으로 메우지 말고 멈춰서 보고</td></tr>
-              <tr><td class="m">Report</td><td>바꾼 파일 · 테스트 결과 · 건너뛴 것과 이유</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="note" style="margin-top:14px">하네스 플러그인이 만드는 파일도 같은 구조입니다: <span class="mono">.claude/agents/</span> 팀원 · <span class="mono">.claude/skills/</span> 매뉴얼 + 진행 순서를 맡는 <b>오케스트레이터</b> Skill · <span class="mono">CLAUDE.md</span> 언제 부를지</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>이번 교안을 고치면서 검토 담당이 잡은 것</h2><span class="head-tag">피드백 루프 · 실제 사례</span></div>
-    <div class="slide-body">
-      <p class="sub" style="margin-bottom:14px"><b class="navy">implementer</b>가 교안을 고치고, 따로 떨어진 <b class="navy">reviewer</b>가 바뀐 내용을 읽어 잡았습니다</p>
-      <table class="agenda agenda--sm">
-        <thead><tr><th>무엇을 잡았나</th><th>그냥 두면 생겼을 일</th></tr></thead>
-        <tbody>
-          <tr><td class="m">실습 지시문에 시험 정답(‘10월 32일’)이 그대로 들어 있음</td><td>AI가 정답을 보고 시작해 시험이 의미 없어짐</td></tr>
-          <tr><td class="m">비교 실습이 공정하지 않음: 같은 대화에 원본이 남아 있음</td><td>한쪽이 유리해 비교 결과를 믿을 수 없음</td></tr>
-          <tr><td class="m">지운 장을 가리키는 문구 · 소개 없이 쓰인 용어(‘하네스 회고’)</td><td>없는 장을 찾거나 모르는 말에서 막힘</td></tr>
-          <tr><td class="m">장 번호를 다시 매기다 대본이 다른 장에 붙을 뻔함 → 대조 스크립트로 확인</td><td>발표 중 화면과 다른 대본이 나옴</td></tr>
-        </tbody>
-      </table>
-      <div class="note" style="margin-top:16px">외부 기준으로 검토하면 작성 과정에서 놓친 문제를 찾을 수 있습니다. 지적을 고친 뒤 같은 기준으로 다시 확인해야 피드백 루프가 닫힙니다</div>
-      <div class="note note--warn" style="margin-top:12px">검토도 완벽하지 않습니다. 마지막 확인은 사람이 합니다</div>
-    </div>
-  </section>
-  <section class="slide">
     <div class="slide-head"><h2>만든 뒤에는 evolve로 고쳐 나갑니다</h2><span class="head-tag">피드백 루프 · 개선</span></div>
     <div class="slide-body">
       <div class="flow flow--sm">
@@ -5452,61 +5218,6 @@ You implement exactly the plan or change you are given. <span class="hl">Do not 
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>내 툴 만들기 ① 준비해 온 PRD를 엽니다</h2><span class="head-tag">내 툴 만들기 · PRD 점검</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm">
-        <thead><tr><th>먼저 할 일</th><th>이유</th></tr></thead>
-        <tbody>
-          <tr><td class="m">원문을 복사해 둔다</td><td>AI의 제안과 비교하고, 원본 요구사항을 잃지 않습니다</td></tr>
-          <tr><td class="m">민감 정보를 가린다</td><td>개인정보, 비밀번호, 고객·거래처 정보는 붙이지 않습니다</td></tr>
-          <tr><td class="m">PRD를 붙이거나 첨부한다</td><td>뒤에 나오는 점검 프롬프트와 함께 같은 대화에 넣습니다</td></tr>
-          <tr><td class="m">원문 상태는 유지한다</td><td>이미 확정한 원문도 바꾸지 않고, 검토본은 초안으로 관리합니다</td></tr>
-        </tbody>
-      </table>
-      <div class="note" style="margin-top:18px">PRD를 준비하지 못했다면 본 수업 흐름 대신 별도 PRD 작성 교안의 템플릿이나 예시 문서를 참고합니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>PRD의 여섯 항목으로 범위를 정합니다</h2><span class="head-tag">내 툴 만들기 · PRD</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm">
-        <thead><tr><th>항목</th><th>답하는 질문</th><th>한 줄 예 · 매장 방문 점검 체크리스트</th></tr></thead>
-        <tbody>
-          <tr><td class="m">문제</td><td>무엇이 불편한가?</td><td>방문 결과를 종이에 적어 집계가 늦음</td></tr>
-          <tr><td class="m">쓰는 사람</td><td>누가, 언제 쓰나?</td><td>매장 방문 중 점검 결과를 기록하는 현장 담당자</td></tr>
-          <tr><td class="m">화면과 기능</td><td>어디에 무엇이 생기나?</td><td>점검 항목 · 체크박스 · 완료 개수</td></tr>
-          <tr><td class="m">데이터</td><td>무엇을 읽고 무엇을 저장하나?</td><td>샘플 점검 항목을 읽고 체크 상태만 저장</td></tr>
-          <tr><td class="m">완료 기준</td><td>다 됐는지 어떻게 확인하나?</td><td>항목을 누르면 완료 개수가 바뀐다</td></tr>
-          <tr><td class="m">하지 않을 것</td><td>이번에 어디까지 안 하나?</td><td>로그인, 외부 연동, 실제 매장 데이터</td></tr>
-        </tbody>
-      </table>
-      <div class="note">기존 문서가 여섯 항목 형식일 필요는 없습니다. 점검할 때 이 내용이 빠졌거나 모호한지만 확인합니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>완료 기준은 직접 확인할 문장으로 씁니다</h2><span class="head-tag">내 툴 만들기 · 완료 기준</span></div>
-    <div class="slide-body">
-      <div class="ba">
-        <div class="ba-col ba--before">
-          <div class="ba-head">나쁜 예</div>
-          <div class="ba-body"><ul>
-            <li>“잘 동작한다”</li>
-            <li>“보기 좋게”</li>
-          </ul></div>
-        </div>
-        <div class="ba-col ba--after">
-          <div class="ba-head">좋은 예</div>
-          <div class="ba-body"><ul>
-            <li>“점검 항목을 누르면 체크 표시가 바뀐다”</li>
-            <li>“완료 개수가 체크한 항목 수와 같다”</li>
-            <li>“초기화하면 모든 체크가 해제된다”</li>
-          </ul></div>
-        </div>
-      </div>
-      <div class="note note--warn">완료 기준은 검토 담당의 채점표입니다. 검토 담당과 사람은 같은 완료 기준으로 결과를 확인합니다</div>
-    </div>
-  </section>
-  <section class="slide">
     <div class="slide-head"><h2>복사해서 쓰는 PRD 점검 프롬프트</h2><span class="head-tag">내 툴 만들기 · PRD 점검</span></div>
     <div class="slide-body">
       <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:8px; font-size:18px; line-height:1.55">
@@ -5521,7 +5232,7 @@ You implement exactly the plan or change you are given. <span class="hl">Do not 
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>내 툴 만들기 ② 점검 결과를 반영해 고칩니다</h2><span class="head-tag">내 툴 만들기 · PRD 점검</span></div>
+    <div class="slide-head"><h2>내 툴 만들기 ① 점검 결과를 반영해 고칩니다</h2><span class="head-tag">내 툴 만들기 · PRD 점검</span></div>
     <div class="slide-body">
       <ol class="steps">
         <li>점검 프롬프트와 민감 정보를 가린 PRD를 같은 대화에 붙이거나 첨부합니다</li>
@@ -5576,55 +5287,32 @@ You implement exactly the plan or change you are given. <span class="hl">Do not 
     <div class="slide-head"><h2>핵심 사용 흐름을 구현합니다</h2><span class="head-tag">구현 · 전체 흐름</span></div>
     <div class="slide-body">
       <ol class="steps">
-        <li><b>준비 · 승인</b> · 앱 폴더와 <span class="mono">prd.md</span> 준비 → 앞에서 본 요청 예시로 하네스 구성 → 파일 검수 · 팀 질문 답변 → PRD 확정 · 사람 승인</li>
+        <li><b>준비 · 승인</b> · 앱 폴더와 <span class="mono">prd.md</span> 준비 → 아래 요청문으로 하네스 구성 → 파일 검수 · 팀 질문 답변 → PRD 확정 · 사람 승인</li>
         <li><b>구현</b> · PRD의 핵심 사용 흐름 하나를 끝까지 구현</li>
         <li><b>검증 · 수정</b> · 실제 브라우저에서 완료 기준을 확인하고 실패를 수정한 뒤 같은 기준 재확인</li>
         <li><b>배포 준비</b> · 기능 추가를 멈추고 안전한 샘플 데이터와 배포 준비 상태 확인</li>
       </ol>
-      <div class="note">AxHub 준비가 끝났으면 템플릿 앱을, 아니면 Next.js 로컬 앱을 요청합니다. 목표는 PRD 전체가 아니라 <b>작동하는 핵심 사용 흐름 하나와 검증 증거</b>입니다</div>
+      <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:14px">
+        <p>“하네스 구성해줘. prd.md를 읽고 기획 · 개발 · 검토 역할로 구성해 줘.</p>
+        <p>검토는 완료 기준으로 확인한 뒤 문제만 보고해 줘.”</p>
+      </div>
+      <div class="note" style="margin-top:14px">AxHub 준비가 끝났으면 템플릿 앱을, 아니면 Next.js 로컬 앱을 요청합니다. 목표는 PRD 전체가 아니라 <b>작동하는 핵심 사용 흐름 하나와 검증 증거</b>입니다</div>
     </div>
   </section>
   <section class="slide">
-    <div class="slide-head"><h2>만든 직후: 생성된 CLAUDE.md를 열어 내 업무와 다른 줄을 지웁니다</h2><span class="head-tag">검수 단계</span></div>
+    <div class="slide-head"><h2>만든 직후: 하네스가 어떻게 구성됐는지 먼저 물어봅니다</h2><span class="head-tag">검수 단계</span></div>
     <div class="slide-body">
       <ol class="steps steps--lg">
-        <li>팀이 만들어지면 바로 쓰지 말고 <span class="mono">CLAUDE.md</span>부터 엽니다</li>
-        <li>줄마다 “내 업무에서 정말 그런가?”를 묻습니다</li>
-        <li>내 업무와 다르거나, 왜 있는지 모르는 줄은 지우거나 고칩니다</li>
+        <li>팀이 만들어지면 바로 일을 시키지 말고 <b>구성부터 확인</b>합니다</li>
+        <li>담당 · 권한 · Skill · 진행 순서가 내 PRD와 맞는지 봅니다</li>
+        <li>다르거나 왜 있는지 모르는 부분은 고쳐 달라고 요청합니다</li>
       </ol>
       <div class="pbox pbox--tight" data-app="Claude Code" style="margin-top:16px">
-        <p>“방금 만든 CLAUDE.md를 한 줄씩 보여 주고, 각 줄이 왜 들어갔는지 설명해 줘. 내가 지우라고 하는 줄은 지워 줘.”</p>
+        <p>“방금 만든 하네스가 어떻게 구성됐는지 설명해 줘.</p>
+        <p>담당별 역할과 쓸 수 있는 도구, 각 담당이 쓰는 Skill, 일하는 순서를 표로 정리하고,</p>
+        <p>각각 어느 파일에 적혀 있는지도 알려 줘.”</p>
       </div>
       <div class="note" style="margin-top:16px"><b>자동 생성은 초안, 확정은 사람</b> — PRD와 같은 원칙입니다 · 개발 시작 전에 확인합니다</div>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>하네스가 도는 모습을 눈으로 확인합니다</h2><span class="head-tag">팀 구성 · 실행 확인</span></div>
-    <div class="slide-body">
-      <p class="sub" style="margin:0 0 10px"><strong class="navy">Desktop 앱 Code 탭에서</strong></p>
-      <ol class="steps steps--lg">
-        <li><b>대화 기록 자세히 보기</b> · 세션 제목 옆 메뉴 → <b>Transcript view</b> (또는 <span class="mono">Ctrl+O</span>로 보기 전환) · 자세히(Verbose)로 두면 어느 담당을 어떤 순서로 불렀는지 보입니다</li>
-        <li><b>지금 일하는 담당 보기</b> · 제목 표시줄 <b>⋮</b> → <b>Background tasks</b> · 일하는 담당 목록이 나오고, 하나를 누르면 그 담당의 작업 내용을 보거나 멈출 수 있습니다</li>
-        <li><b>만들어진 파일 보기</b> · 작업 폴더에서 <span class="mono">.claude/agents</span> · <span class="mono">.claude/skills</span>와 결과 파일을 엽니다</li>
-      </ol>
-      <div class="note" style="margin-top:16px">Background tasks는 뒤에서 일하는 담당이 있을 때 메뉴에 나타납니다 · 터미널(CLI)에서는 <span class="mono">/tasks</span>, 워크플로 방식이면 <span class="mono">/workflows</span>로 같은 내용을 봅니다</div>
-      <p class="src">출처 · code.claude.com/docs (desktop · sub-agents · interactive-mode · workflows)</p>
-    </div>
-  </section>
-  <section class="slide">
-    <div class="slide-head"><h2>구현 진행표 · 지금 위치를 표시합니다</h2><span class="head-tag">구현 · 체크포인트</span></div>
-    <div class="slide-body">
-      <table class="agenda agenda--sm" style="table-layout:fixed">
-        <colgroup><col style="width:15%"><col style="width:58%"><col style="width:27%"></colgroup>
-        <thead><tr><th>단계</th><th>완료 상태</th><th>막혔을 때 남길 것</th></tr></thead>
-        <tbody>
-          <tr><td class="m">준비</td><td>앱 폴더 · <span class="mono">prd.md</span> · 팀 파일 검수 · 질문 답변 · PRD 확정 · 구현 승인</td><td>준비 단계와 이유</td></tr>
-          <tr><td class="m">구현</td><td>핵심 흐름을 브라우저에서 끝까지 실행</td><td>멈춘 화면과 오류 문구</td></tr>
-          <tr><td class="m">검증 · 수정</td><td>완료 기준 확인 · 실패 수정 · 같은 기준 재확인</td><td>통과·실패한 기준</td></tr>
-          <tr><td class="m">배포 준비</td><td>핵심 흐름 우선 완성, 추가 기능은 남은 범위로 기록</td><td>남은 범위와 다음 작업</td></tr>
-        </tbody>
-      </table>
-      <div class="note note--warn">핵심 흐름을 먼저 완성하고, 추가 기능은 사람이 범위를 정해 남은 작업으로 기록합니다. 통과하지 않은 완료 기준을 숨기거나 배포 완료로 표시하지 않습니다</div>
     </div>
   </section>
   <section class="slide">
@@ -5636,6 +5324,28 @@ You implement exactly the plan or change you are given. <span class="hl">Do not 
       </div>
       <div class="pbox" style="margin-top:18px"><p>“prd.md에 데이터 입력이 있을 때만 구현해 줘. 민감 정보를 가린 샘플로 시험하고, 열 이름이나 응답 형식이 다르면 먼저 질문해 줘.”</p></div>
       <div class="note">배포 전에는 로컬에서 쓴 파일과 브라우저 저장값이 자동으로 서버에 옮겨진다고 가정하지 않습니다</div>
+    </div>
+  </section>
+  <section class="slide">
+    <div class="slide-head"><h2>여러 작업을 동시에 맡기는 방법</h2><span class="head-tag">구현 · 병렬 작업</span></div>
+    <div class="slide-body">
+      <div class="kv kv--2">
+        <div class="kv-item">
+          <p class="kv-name">Git이 있는 폴더 · 워크트리로 나눕니다</p>
+          <p class="kv-like">세션마다 <b>따로 된 작업 복사본과 브랜치</b>를 만들어, 한쪽은 기능을 만들고 다른 쪽은 버그를 고쳐도 서로 부딪히지 않습니다</p>
+          <p class="kv-when">터미널: <span class="mono">claude --worktree 이름</span> · 다른 터미널에서 다른 이름으로 한 번 더</p>
+          <p class="kv-when">데스크톱 앱: 입력창 아래 프로젝트 폴더 → <b>Worktree</b> 켜고 새 세션(<span class="mono">Cmd+N</span>)</p>
+          <p class="kv-when">복사본은 <span class="mono">.claude/worktrees/이름</span>에 생기고, 끝낼 때 바뀐 게 있으면 남길지 물어봅니다</p>
+        </div>
+        <div class="kv-item">
+          <p class="kv-name">Git이 없는 폴더</p>
+          <p class="kv-like">워크트리 기능은 <b>Git 저장소에서만</b> 쓸 수 있습니다. 그냥 여러 세션을 열면 <b>같은 폴더의 같은 파일</b>을 함께 고칩니다</p>
+          <p class="kv-when">① 세션마다 서로 다른 파일 · 다른 일만 맡깁니다</p>
+          <p class="kv-when">② 폴더를 복사해 각각 따로 엽니다 · 합칠 때는 직접 옮깁니다</p>
+          <p class="kv-when">③ “이 폴더를 Git으로 관리해 줘”라고 요청해 Git을 시작합니다 · GitHub 없이 내 PC에서만 써도 됩니다</p>
+        </div>
+      </div>
+      <p class="src">출처 · code.claude.com/docs (worktrees · desktop)</p>
     </div>
   </section>
   <section class="slide slide--chapter" data-chapter="배포·공유">
